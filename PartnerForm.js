@@ -40,6 +40,8 @@ window.addEventListener('error', function(event) {
    languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("4", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
  } 
  JotForm.onTranslationsFetch(function() { JotForm.setCalendar("4", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+if (window.JotForm && JotForm.accessible) $('input_38').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_39').setAttribute('tabindex',0);
 if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex',0);
       JotForm.setPhoneMaskingValidator( 'input_7_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
 if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
@@ -61,7 +63,7 @@ if (window.JotForm && JotForm.accessible) $('input_31').setAttribute('tabindex',
 	});
 
    setTimeout(function() {
-JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"patientFull","qid":"3","text":"Patient Full Name","type":"control_fullname"},{"description":"","name":"patientDate","qid":"4","text":"Patient Date of Birth","type":"control_datetime"},{"description":"","name":"patientAddress","qid":"5","text":"Patient Address","type":"control_address"},{"description":"","name":"patientEmail","qid":"6","subLabel":"","text":"Patient Email","type":"control_email"},{"description":"","name":"patientPhone","qid":"7","text":"Patient Phone Number","type":"control_phone"},{"description":"","name":"referreryour","qid":"8","text":"Referrer (Your) Name","type":"control_fullname"},{"name":"divider","qid":"9","text":"Divider","type":"control_divider"},null,{"description":"","name":"referrerPhone","qid":"11","text":"Referrer Phone Number","type":"control_phone"},null,{"description":"","name":"referrerEmail","qid":"13","subLabel":"","text":"Referrer Email","type":"control_email"},{"description":"","mde":"No","name":"notes","qid":"14","subLabel":"","text":"Notes","type":"control_textarea","wysiwyg":"Disable"},{"description":"","name":"wouldYou","qid":"15","text":"Would you like to provide insurance details?","type":"control_radio"},{"description":"","name":"patientsInsurance","qid":"16","subLabel":"","text":"Patient's Insurance Carrier","type":"control_textbox"},{"description":"","name":"patientsGroup","qid":"17","subLabel":"","text":"Patient's Group Number","type":"control_textbox"},{"description":"","name":"patientsMember","qid":"18","subLabel":"","text":"Patient's Member ID\u002FMedicaid #","type":"control_textbox"},null,{"description":"","name":"insurancePhone","qid":"20","text":"Insurance Phone","type":"control_phone"},null,{"name":"input22","qid":"22","text":"Would you like to provide Insurance Details?","type":"control_text"},null,{"name":"divider24","qid":"24","text":"Divider","type":"control_divider"},{"name":"typeA","qid":"25","text":"Referrer","type":"control_widget"},{"description":"","name":"typeA26","qid":"26","subLabel":"","text":"utm_campaign","type":"control_textbox"},{"description":"","name":"utm_content","qid":"27","subLabel":"","text":"utm_content","type":"control_textbox"},{"description":"","name":"utm_medium","qid":"28","subLabel":"","text":"utm_medium","type":"control_textbox"},{"description":"","name":"utm_source","qid":"29","subLabel":"","text":"utm_source","type":"control_textbox"},{"description":"","name":"utm_term","qid":"30","subLabel":"","text":"utm_term","type":"control_textbox"},{"description":"","name":"GCLID","qid":"31","subLabel":"","text":"GCLID","type":"control_textbox"},{"name":"typeA32","qid":"32","text":"Get Page URL","type":"control_widget"},null,null,null,{"description":"","name":"typeA36","qid":"36","subLabel":"","text":"Patient Postal \u002F Zip Code","type":"control_textbox"},{"description":"","name":"typeA37","qid":"37","subLabel":"","text":"Referrer Zip","type":"control_textbox"}]);}, 20); 
+JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"patientFull","qid":"3","text":"Patient Full Name","type":"control_fullname"},{"description":"","name":"patientDate","qid":"4","text":"Patient Date of Birth","type":"control_datetime"},null,{"description":"","name":"patientEmail","qid":"6","subLabel":"","text":"Patient Email","type":"control_email"},{"description":"","name":"patientPhone","qid":"7","text":"Patient Phone Number","type":"control_phone"},{"description":"","name":"referreryour","qid":"8","text":"Referrer (Your) Name","type":"control_fullname"},{"name":"divider","qid":"9","text":"Divider","type":"control_divider"},null,{"description":"","name":"referrerPhone","qid":"11","text":"Referrer Phone Number","type":"control_phone"},null,{"description":"","name":"referrerEmail","qid":"13","subLabel":"","text":"Referrer Email","type":"control_email"},{"description":"","mde":"No","name":"notes","qid":"14","subLabel":"","text":"Notes","type":"control_textarea","wysiwyg":"Disable"},{"description":"","name":"wouldYou","qid":"15","text":"Would you like to provide insurance details?","type":"control_radio"},{"description":"","name":"patientsInsurance","qid":"16","subLabel":"","text":"Patient's Insurance Carrier","type":"control_textbox"},{"description":"","name":"patientsGroup","qid":"17","subLabel":"","text":"Patient's Group Number","type":"control_textbox"},{"description":"","name":"patientsMember","qid":"18","subLabel":"","text":"Patient's Member ID\u002FMedicaid #","type":"control_textbox"},null,{"description":"","name":"insurancePhone","qid":"20","text":"Insurance Phone","type":"control_phone"},null,{"name":"input22","qid":"22","text":"Would you like to provide Insurance Details?","type":"control_text"},null,{"name":"divider24","qid":"24","text":"Divider","type":"control_divider"},{"name":"typeA","qid":"25","text":"Referrer","type":"control_widget"},{"description":"","name":"typeA26","qid":"26","subLabel":"","text":"utm_campaign","type":"control_textbox"},{"description":"","name":"utm_content","qid":"27","subLabel":"","text":"utm_content","type":"control_textbox"},{"description":"","name":"utm_medium","qid":"28","subLabel":"","text":"utm_medium","type":"control_textbox"},{"description":"","name":"utm_source","qid":"29","subLabel":"","text":"utm_source","type":"control_textbox"},{"description":"","name":"utm_term","qid":"30","subLabel":"","text":"utm_term","type":"control_textbox"},{"description":"","name":"GCLID","qid":"31","subLabel":"","text":"GCLID","type":"control_textbox"},{"name":"typeA32","qid":"32","text":"Page URL","type":"control_widget"},null,null,null,{"description":"","name":"typeA36","qid":"36","subLabel":"","text":"Patient Postal \u002F Zip Code","type":"control_textbox"},{"description":"","name":"typeA37","qid":"37","subLabel":"","text":"Referrer Zip","type":"control_textbox"},{"description":"","name":"typeA38","qid":"38","subLabel":"","text":"Patient Address","type":"control_textbox"},{"description":"","name":"typeA39","qid":"39","subLabel":"","text":"Patient City","type":"control_textbox"},null,{"description":"","name":"typeA41","qid":"41","subLabel":"","text":"Patient State","type":"control_dropdown"}]);}, 20); 
 
 
     JotForm.showJotFormPowered = "0";
@@ -78,7 +80,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Sub
     {
       all_spc[i].value = "241795436729066-241795436729066";
     }
-/* GTM dataLayer Push */
+  /* GTM dataLayer Push */
 
 var form = document.getElementById('241795436729066');
 form.addEventListener('submit', function(event) {
@@ -86,9 +88,9 @@ form.addEventListener('submit', function(event) {
   var firstName = document.getElementById('first_3').value;
   var lastName = document.getElementById('last_3').value;
   var dob = document.getElementById('lite_mode_4').value;
-  var streetAddress = document.getElementById('input_5_addr_line1').value;
-  var city = document.getElementById('input_5_city').value;
-  var state = document.getElementById('input_5_state').value;
+  var streetAddress = document.getElementById('input_38').value;
+  var city = document.getElementById('input_39').value;
+  var state = document.getElementById('input_41').value;
   var zip = document.getElementById('input_36').value;
   var phone = document.getElementById('input_7_full').value;
   var email = document.getElementById('input_6').value;
@@ -118,10 +120,15 @@ form.addEventListener('submit', function(event) {
     'referrer_email': referrerEmail,
     'insurance_details': insuranceDetails
   });
-});  
+
 JotForm.ownerView=true;
 JotForm.isNewSACL=true;
 
 window.addEventListener("DOMContentLoaded", (event) => {
   document.getElementById("input_32").value = window.location;
 });
+
+
+
+
+
