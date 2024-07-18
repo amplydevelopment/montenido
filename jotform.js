@@ -2,7 +2,7 @@
  * JotForm Form object
  */
 (function(){
-    const $p = $;
+    const $p = window.$;
     window.$ = jQuery;
     const $ = $p;
     var JotForm = {
