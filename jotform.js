@@ -1531,7 +1531,20 @@ var JotForm = {
         if (document.readyState === 'complete' || (this.jsForm && (document.readyState === undefined || document.readyState === 'interactive'))) {
             sourceCodeCompatibilityFixers();
         } else {
-            document.ready(sourceCodeCompatibilityFixers);
+            
+            const call = ()=>{
+              
+                if(document.readyState === 'complete'){
+                    sourceCodeCompatibilityFixers();
+                }else{
+                    setTimeout(()=>{
+                        call();
+                    },500)
+                }
+            }
+            call();
+
+            //document.ready(sourceCodeCompatibilityFixers);
         }
 
         const { getLoops, getCalculationMap} = this.conditionDebugger();
