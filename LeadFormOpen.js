@@ -92,3 +92,8 @@ form.addEventListener('submit', function(event) {
 
 JotForm.ownerView=true;
 JotForm.isNewSACL=true;
+
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  document.getElementById("input_21").value = window.location;
+});
