@@ -92,4 +92,3 @@ form.addEventListener('submit', function(event) {
 
 JotForm.ownerView=true;
 JotForm.isNewSACL=true;
-console.log("test")
