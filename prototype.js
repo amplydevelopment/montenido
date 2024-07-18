@@ -2054,6 +2054,7 @@ function $(element) {
     element = document.getElementById(element);
   return Element.extend(element);
 }
+window.$p = $;
 
 if (Prototype.BrowserFeatures.XPath) {
   document._getElementsByXPath = function(expression, parentElement) {

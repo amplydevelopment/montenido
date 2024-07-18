@@ -1,10 +1,10 @@
 /**
  * JotForm Form object
  */
-(function(){
-    const $p = window.$;
+(function($){
+
     window.$ = jQuery;
-    const $ = $p;
+
     var JotForm = {
     /**
      * JotForm domain
@@ -21660,4 +21660,4 @@ function generateUUID(formID) {
 
 // We have to put this event because it's the only way to catch FB load
 window.fbAsyncInit = JotForm.FBInit.bind(JotForm);
-})();
+})(window.$p);
