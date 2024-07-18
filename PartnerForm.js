@@ -91,7 +91,7 @@ form.addEventListener('submit', function(event) {
 
   // Push data to the GTM data layer
   dataLayer.push({
-    'event': 'form_submit',
+    'event': 'form_submit_partner',
     'first_name': firstName,
     'last_name': lastName,
     'email': email,

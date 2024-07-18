@@ -75,15 +75,17 @@ form.addEventListener('submit', function(event) {
   var email = document.getElementById('input_5').value;
   var phone = document.getElementById('input_6_full').value;
   var zip = document.getElementById('input_30').value;
+  var ManualSource = document.getElementById('input_12').value;
 
   // Push data to the GTM data layer
   dataLayer.push({
-    'event': 'form_submit',
+    'event': 'form_submit_lead',
     'first_name': firstName,
     'last_name': lastName,
     'email': email,
     'phone': phone,
-    'zip': zip
+    'zip': zip,
+    'ManualSource': ManualSource
   });
 });
 
