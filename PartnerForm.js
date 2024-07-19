@@ -80,7 +80,48 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Sub
     {
       all_spc[i].value = "241795436729066-241795436729066";
     }
-  
+/* GTM dataLayer Push */
+
+var form = document.getElementById('241795436729066');
+form.addEventListener('submit', function(event) {
+  // Capture form data
+  var firstName = document.getElementById('first_3').value;
+  var lastName = document.getElementById('last_3').value;
+  var dob = document.getElementById('lite_mode_4').value;
+  var streetAddress = document.getElementById('input_38').value;
+  var city = document.getElementById('input_39').value;
+  var state = document.getElementById('input_41').value;
+  var zip = document.getElementById('input_36').value;
+  var phone = document.getElementById('input_7_full').value;
+  var email = document.getElementById('input_6').value;
+  var referrerFirstName = document.getElementById('first_8').value;
+  var referrerLastName = document.getElementById('last_8').value;
+  var referrerZip = document.getElementById('input_37').value;
+  var referrerPhone = document.getElementById('input_11_full').value;
+  var referrerEmail = document.getElementById('input_13').value;
+  var insuranceDetails = document.querySelector('input[name="q15_wouldYou"]:checked').value;
+
+  // Push data to the GTM data layer
+  dataLayer.push({
+    'event': 'form_submit_partner',
+    'first_name': firstName,
+    'last_name': lastName,
+    'dob': dob,
+    'street_address': streetAddress,
+    'city': city,
+    'state': state,
+    'zip': zip,
+    'phone': phone,
+    'email': email,
+    'referrer_first_name': referrerFirstName,
+    'referrer_last_name': referrerLastName,
+    'referrer_zip': referrerZip,
+    'referrer_phone': referrerPhone,
+    'referrer_email': referrerEmail,
+    'insurance_details': insuranceDetails
+  });
+}); 
+
 JotForm.ownerView=true;
 JotForm.isNewSACL=true;
 
