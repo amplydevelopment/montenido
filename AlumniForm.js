@@ -66,7 +66,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,{"description":"","name":"firstNam
       all_spc[i].value = "242315041932144-242315041932144";
     }
 
-/* GTM dataLayer Push */
+/* GTM dataLayer Push. */
 
 var form = document.getElementById('241830427246050');
 form.addEventListener('submit', function(event) {
