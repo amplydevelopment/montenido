@@ -176,12 +176,24 @@ git push origin main
 -   Integrate Google Tag Manager (GTM) by adding a `dataLayer` push.
 
 ```javascript
-dataLayer.push({
-	event: 'formSubmit',
+/* GTM dataLayer Push. */
+const form = document.getElementById('241830427246050');
 
-	formId: 'your-form-id',
+form.addEventListener('submit', function (event) {
+	// Capture form data
+	const firstName = document.getElementById('input_3').value;
+	const lastName = document.getElementById('input_4').value;
+	const email = document.getElementById('input_5').value;
+	const ManualSource = document.getElementById('input_12').value;
 
-	// Add additional data as needed
+	// Push data to the GTM data layer
+	dataLayer.push({
+		event: 'form_submit_lead',
+		first_name: firstName,
+		last_name: lastName,
+		email: email,
+		ManualSource: ManualSource,
+	});
 });
 ```
 
