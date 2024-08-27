@@ -166,10 +166,10 @@ git push origin main
     filename:
 
 ```html
-<script src="https://cdn.example.com/montenido@{commitId}/{filename}.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
 ```
 
--   Replace `{commitId}` with the actual commit ID and `{filename}` with the JavaScript file name.
+-   Replace `{insert-commit-id}` with the actual commit ID and `{insert-file-name}` with the JavaScript file name.
 
 5.  **Add GTM dataLayer Push**
 
