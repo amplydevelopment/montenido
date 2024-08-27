@@ -98,7 +98,7 @@ git push origin main
 <script src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
 ```
 
--   Replace `{commitId}` with the actual commit ID and `{filename}` with the JavaScript file name.
+-   Replace `{insert-commit-id}` with the actual commit ID and `{insert-file-name}` with the JavaScript file name.
 
 ## Creating New Forms
 
