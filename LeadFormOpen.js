@@ -94,5 +94,15 @@ JotForm.ownerView=true;
 JotForm.isNewSACL=true;
 
 window.addEventListener("DOMContentLoaded", (event) => {
-  document.getElementById("input_21").value = window.location;
+  // Get the current URL
+  var currentUrl = window.location.href;
+  
+  // Check if the URL exceeds 255 characters
+  if (currentUrl.length > 255) {
+      // Truncate the URL to 255 characters
+      currentUrl = currentUrl.substring(0, 255);
+  }
+  
+  // Set the value of the input field to the truncated URL
+  document.getElementById("input_21").value = currentUrl;
 });
