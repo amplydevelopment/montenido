@@ -32,10 +32,10 @@ window.addEventListener('error', function(event) {
 	/*INIT-START*/
 if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);
 if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
-      JotForm.setPhoneMaskingValidator( 'input_6_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
 if (window.JotForm && JotForm.accessible) $('input_30').setAttribute('tabindex',0);
       JotForm.description('input_30', 'Pls. Enter 5 Digit Zip Code');
 if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex',0);
+      JotForm.setPhoneMaskingValidator( 'input_6_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
 if (window.JotForm && JotForm.accessible) $('input_26').setAttribute('tabindex',0);
 if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
 if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
@@ -66,7 +66,7 @@ JotForm.paymentExtrasOnTheFly([null,null,null,{"description":"","name":"firstNam
     {
       all_spc[i].value = "241830427246050-241830427246050";
     }
-
+  
 /* GTM dataLayer Push */
 
 var form = document.getElementById('241830427246050');
