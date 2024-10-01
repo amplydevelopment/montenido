@@ -257,5 +257,19 @@ for (var i = 0; i < all_spc.length; i++) {
 	all_spc[i].value = '242744819100049-242744819100049';
 }
 
+/* GTM dataLayer Push. */
+const form = document.getElementById('241830427246050');
+
+form.addEventListener('submit', function (event) {
+	// Capture form data
+	const email = document.getElementById('input_3').value;
+
+	// Push data to the GTM data layer
+	dataLayer.push({
+		event: 'form_submit_lead',
+		email,
+	});
+});
+
 JotForm.ownerView = true;
 JotForm.isNewSACL = true;
