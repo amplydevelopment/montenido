@@ -107,6 +107,26 @@ JotForm.newPaymentUI = true;
 JotForm.hipaa = true;
 JotForm.originalLanguage = 'en';
 JotForm.replaceTagTest = true;
+
+JotForm.setConditions([
+	{
+		action: [{ id: 'action_1728323900384', visibility: 'Hide', isError: false, field: '2' }],
+		id: '1728323908854',
+		index: '0',
+		link: 'Any',
+		priority: '0',
+		terms: [
+			{
+				id: 'term_1728323900384',
+				field: '3',
+				operator: 'contains',
+				value: '@mailinator.com, @jourrapide.com, @armyspy.com, @rhyta.com, @dayrep.com, @teleworm.us',
+				isError: false,
+			},
+		],
+		type: 'field',
+	},
+]);
 JotForm.clearFieldOnHide = 'disable';
 JotForm.submitError = 'jumpToFirstError';
 
