@@ -252,10 +252,10 @@ JotForm.setConditions([
 	{
 		action: [
 			{
-				id: 'action_0_1729617217322',
+				id: 'action_0_1730148406830',
 				visibility: 'ShowMultiple',
 				isError: false,
-				fields: ['37', '38', '43', '44', '51', '40', '45', '46', '52'],
+				fields: ['37', '38', '43', '44', '45', '46', '57', '61', '63'],
 			},
 		],
 		id: '1729541803646',
@@ -264,7 +264,7 @@ JotForm.setConditions([
 		priority: '2',
 		terms: [
 			{
-				id: 'term_0_1729617217322',
+				id: 'term_0_1730148406830',
 				field: '11',
 				operator: 'equals',
 				value: 'I am a professional looking to refer a patient\u002Fclient',
@@ -275,7 +275,7 @@ JotForm.setConditions([
 	},
 	{
 		action: [
-			{ id: 'action_0_1729544696782', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '40'] },
+			{ id: 'action_0_1730148417206', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '63'] },
 		],
 		id: '1729541627900',
 		index: '3',
@@ -283,14 +283,14 @@ JotForm.setConditions([
 		priority: '3',
 		terms: [
 			{
-				id: 'term_0_1729544696782',
+				id: 'term_0_1730148417206',
 				field: '11',
 				operator: 'equals',
 				value: 'I am seeking help for my family member',
 				isError: false,
 			},
 			{
-				id: 'term_1_1729544696782',
+				id: 'term_1_1730148417206',
 				field: '11',
 				operator: 'equals',
 				value: 'I am seeking help for my friend',
@@ -486,17 +486,17 @@ JotForm.setConditions([
 	{
 		action: [
 			{
-				id: 'action_0_1729616983242',
+				id: 'action_0_1730144944909',
 				visibility: 'HideMultiple',
 				isError: false,
-				fields: ['3', '4', '5', '6', '12', '10', '27', '30', '22', '31', '32', '36', '52', '46'],
+				fields: ['3', '4', '5', '6', '12', '10', '27', '30', '22', '31', '32', '36', '46', '57'],
 			},
 		],
 		id: '1719896902666',
 		index: '11',
 		link: 'Any',
 		priority: '11',
-		terms: [{ id: 'term_0_1729616983242', field: '11', operator: 'isEmpty', value: '', isError: false }],
+		terms: [{ id: 'term_0_1730144944909', field: '11', operator: 'isEmpty', value: '', isError: false }],
 		type: 'field',
 	},
 	{
@@ -636,7 +636,7 @@ JotForm.init(function () {
 		'December',
 	];
 	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
-	JotForm.calenderViewMonths[40] = [
+	JotForm.calenderViewMonths[63] = [
 		'January',
 		'February',
 		'March',
@@ -651,7 +651,7 @@ JotForm.init(function () {
 		'December',
 	];
 	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};
-	JotForm.calenderViewDays[40] = [
+	JotForm.calenderViewDays[63] = [
 		'Sunday',
 		'Monday',
 		'Tuesday',
@@ -662,12 +662,12 @@ JotForm.init(function () {
 		'Sunday',
 	];
 	JotForm.calendarDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-	JotForm.calendarOther = { today: 'Clients DOB ' };
+	JotForm.calendarOther = { today: 'Today' };
 	var languageOptions = document.querySelectorAll('#langList li');
 	for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
 		languageOptions[langIndex].on('click', function (e) {
 			setTimeout(function () {
-				JotForm.setCalendar('40', false, {
+				JotForm.setCalendar('63', false, {
 					days: {
 						monday: true,
 						tuesday: true,
@@ -689,7 +689,7 @@ JotForm.init(function () {
 		});
 	}
 	JotForm.onTranslationsFetch(function () {
-		JotForm.setCalendar('40', false, {
+		JotForm.setCalendar('63', false, {
 			days: {
 				monday: true,
 				tuesday: true,
@@ -708,7 +708,7 @@ JotForm.init(function () {
 			countSelectedDaysOnly: false,
 		});
 	});
-	JotForm.description('input_40', 'Clients DOB');
+	JotForm.description('input_63', 'Clients DOB');
 	if (window.JotForm && JotForm.accessible) $('input_45').setAttribute('tabindex', 0);
 	JotForm.description('input_45', 'Pls. Enter 5 Digit Zip Code');
 	JotForm.description('input_46', 'Level of care your client is interested in ');
@@ -949,7 +949,7 @@ setTimeout(function () {
 			type: 'control_textbox',
 		},
 		null,
-		{ description: 'Clients DOB', name: 'date', qid: '40', text: 'Clients DOB', type: 'control_datetime' },
+		null,
 		null,
 		null,
 		{
@@ -980,14 +980,25 @@ setTimeout(function () {
 		null,
 		null,
 		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{ name: 'input57', qid: '57', text: 'Level of care Client is interested in', type: 'control_text' },
+		null,
+		null,
+		null,
 		{
 			description: '',
-			name: 'disclaimerCheckbox',
-			qid: '51',
-			text: 'Permission to Contact Client Directly',
+			name: 'typeA61',
+			qid: '61',
+			text: 'Yes, I give Permission to reach out directly to my client',
 			type: 'control_checkbox',
 		},
-		{ name: 'levelOf', qid: '52', text: 'Level of Care Client is interested in ', type: 'control_head' },
+		null,
+		{ description: 'Clients DOB', name: 'date', qid: '63', text: 'Clients DOB', type: 'control_datetime' },
 	]);
 }, 20);
 
