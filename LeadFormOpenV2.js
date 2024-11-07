@@ -714,7 +714,6 @@ JotForm.init(function () {
 	JotForm.description('input_46', 'Level of care your client is interested in ');
 	if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex', 0);
-	JotForm.description('input_36', 'Healthcare Provider Name and Practice');
 	JotForm.setPhoneMaskingValidator(
 		'input_6_full',
 		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
@@ -925,7 +924,7 @@ setTimeout(function () {
 		null,
 		null,
 		{
-			description: 'Healthcare Provider Name and Practice',
+			description: '',
 			name: 'typeA36',
 			qid: '36',
 			subLabel: '',
@@ -986,7 +985,7 @@ setTimeout(function () {
 		null,
 		null,
 		null,
-		{ name: 'input57', qid: '57', text: 'Level of care Client is interested in', type: 'control_text' },
+		{ name: 'input57', qid: '57', text: 'Level of care client is interested in', type: 'control_text' },
 		null,
 		null,
 		null,
