@@ -1042,6 +1042,7 @@ JotForm.isNewSACL = true;
 window.addEventListener('DOMContentLoaded', event => {
 	// Get the current URL
 	var currentUrl = window.location.href;
+	console.log('currentUrl :', currentUrl);
 
 	// Check if the URL exceeds 255 characters
 	if (currentUrl.length > 255) {
@@ -1050,5 +1051,7 @@ window.addEventListener('DOMContentLoaded', event => {
 	}
 
 	// Set the value of the input field to the truncated URL
-	document.getElementById('input_21').value = currentUrl;
+	const currentUrlInput = document.getElementById('input_21');
+	console.log('currentUrlInput :', currentUrlInput);
+	currentUrlInput.value = currentUrl;
 });
