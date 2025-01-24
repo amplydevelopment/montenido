@@ -1,3 +1,4 @@
+window.enableEventObserver = true;
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
@@ -521,7 +522,7 @@ JotForm.setConditions([
 		index: '13',
 		link: 'All',
 		priority: '13',
-		terms: [{ id: 'term_1_1729538558495', field: '12', operator: 'notEquals', value: 'Other', isError: false }],
+		terms: [{ id: 'term_1_1729538558495', field: '12', operator: 'notEquals', value: 'O', isError: false }],
 		type: 'field',
 	},
 	{
@@ -582,7 +583,7 @@ JotForm.setConditions([
 		isError: '1',
 		link: 'Any',
 		priority: '15',
-		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: '', isError: false }],
+		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: 'O', isError: false }],
 		type: 'calculation',
 	},
 ]);
