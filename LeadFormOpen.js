@@ -157,26 +157,6 @@ JotForm.setCalculations([
 		newCalculationType: true,
 		allowZeroCopy: true,
 		useCommasForDecimals: false,
-		operands: '10',
-		equation: '{10}',
-		showBeforeInput: false,
-		showEmptyDecimals: false,
-		ignoreHiddenFields: false,
-		insertAsText: false,
-		id: 'action_0_1720040239721',
-		resultField: '26',
-		decimalPlaces: '2',
-		isError: false,
-		conditionId: '1720039305589',
-		conditionTrue: false,
-		baseField: '10',
-	},
-	{
-		replaceText: '',
-		readOnly: false,
-		newCalculationType: true,
-		allowZeroCopy: true,
-		useCommasForDecimals: false,
 		operands: '12',
 		equation: '{12}',
 		showBeforeInput: false,
@@ -487,17 +467,17 @@ JotForm.setConditions([
 	{
 		action: [
 			{
-				id: 'action_0_1730144944909',
+				id: 'action_0_1738084984083',
 				visibility: 'HideMultiple',
 				isError: false,
-				fields: ['3', '4', '5', '6', '12', '10', '27', '30', '22', '31', '32', '36', '46', '57'],
+				fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57'],
 			},
 		],
 		id: '1719896902666',
 		index: '11',
 		link: 'Any',
 		priority: '11',
-		terms: [{ id: 'term_0_1730144944909', field: '11', operator: 'isEmpty', value: '', isError: false }],
+		terms: [{ id: 'term_0_1738084984083', field: '11', operator: 'isEmpty', value: '', isError: false }],
 		type: 'field',
 	},
 	{
@@ -515,45 +495,6 @@ JotForm.setConditions([
 		priority: '12',
 		terms: [{ id: 'term_0_1727203212516', field: '11', operator: 'isFilled', value: '', isError: false }],
 		type: 'field',
-	},
-	{
-		action: [{ id: 'action_0_1729538558495', visibility: 'Hide', isError: false, field: '10' }],
-		id: '1720025586590',
-		index: '13',
-		link: 'All',
-		priority: '13',
-		terms: [{ id: 'term_1_1729538558495', field: '12', operator: 'notEquals', value: 'O', isError: false }],
-		type: 'field',
-	},
-	{
-		action: [
-			{
-				replaceText: '',
-				readOnly: false,
-				newCalculationType: true,
-				allowZeroCopy: true,
-				useCommasForDecimals: false,
-				operands: '10',
-				equation: '{10}',
-				showBeforeInput: false,
-				showEmptyDecimals: false,
-				ignoreHiddenFields: false,
-				insertAsText: false,
-				id: 'action_0_1720040239721',
-				resultField: '26',
-				decimalPlaces: '2',
-				isError: false,
-				conditionId: '1720039305589',
-				conditionTrue: false,
-				baseField: '10',
-			},
-		],
-		id: '1720039305589',
-		index: '14',
-		link: 'Any',
-		priority: '14',
-		terms: [{ id: 'term_0_1720040239721', field: '10', operator: 'isFilled', value: '', isError: false }],
-		type: 'calculation',
 	},
 	{
 		action: [
@@ -579,11 +520,11 @@ JotForm.setConditions([
 			},
 		],
 		id: '1720040286767',
-		index: '15',
+		index: '13',
 		isError: '1',
 		link: 'Any',
-		priority: '15',
-		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: 'O', isError: false }],
+		priority: '13',
+		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: 'Ot', isError: false }],
 		type: 'calculation',
 	},
 ]);
@@ -713,7 +654,6 @@ JotForm.init(function () {
 	if (window.JotForm && JotForm.accessible) $('input_45').setAttribute('tabindex', 0);
 	JotForm.description('input_45', 'Pls. Enter 5 Digit Zip Code');
 	JotForm.description('input_46', 'Level of care your client is interested in ');
-	if (window.JotForm && JotForm.accessible) $('input_10').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex', 0);
 	JotForm.setPhoneMaskingValidator(
 		'input_6_full',
@@ -844,14 +784,7 @@ setTimeout(function () {
 		null,
 		null,
 		null,
-		{
-			description: '',
-			name: 'ifA',
-			qid: '10',
-			subLabel: '',
-			text: 'Please detail how you heard about us',
-			type: 'control_textbox',
-		},
+		null,
 		{
 			description: '',
 			name: 'whoDo',
