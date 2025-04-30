@@ -90,6 +90,27 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submit2","qid":"2","text":"Sub
     {
       all_spc[i].value = "251184756422155-251184756422155";
     }
-  
+
+/* GTM dataLayer Push. */
+const form = document.getElementById('251184756422155');
+
+form.addEventListener('submit', function (event) {
+	// Capture form data
+	const firstName = document.getElementById('first_3').value;
+	const lastName = document.getElementById('last_3').value;
+	const email = document.getElementById('input_6').value;
+
+	// Push data to the GTM data layer
+	dataLayer.push({
+		event: 'form_submit_lead',
+		first_name: firstName,
+		last_name: lastName,
+		email: email,
+	});
+});
+
 JotForm.ownerView=true;
 JotForm.isNewSACL=true;
+
+
+
