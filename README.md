@@ -1,6 +1,7 @@
 # MONTENIDO Form Deployment Guide
 
 This guide outlines the steps to create and update forms using Jotform on Webflow for the MONTENIDO project. It covers
+
 two main scenarios: **Making Changes to Existing Forms** and **Creating New Forms**.
 
 ## Table of Contents
@@ -19,11 +20,11 @@ two main scenarios: **Making Changes to Existing Forms** and **Creating New Form
 
 Before you begin, ensure you have the following:
 
--   Access to Jotform and Webflow accounts.
+-   Access to [Jotform](https://montenido.jotform.com/) and Webflow accounts.
 
 -   GitHub repository access: [amplydevelopment/montenido](https://github.com/amplydevelopment/montenido).
 
--   Git installed on your local machine.
+-   Git installed on your local machine. (If using locally)
 
 -   Basic knowledge of HTML, JavaScript, and GitHub workflows.
 
@@ -31,17 +32,17 @@ Before you begin, ensure you have the following:
 
 When updating an existing form, follow these steps:
 
-1.  **Access the Jotform Builder**
+#### 1. **Access the Jotform Builder**
 
 -   Navigate to the Jotform Builder URL: [JotForm Builder](https://webflow-test-env.webflow.io/jotform-builder)
 
-2.  **Copy the Updated HTML Code**
+#### 2. **Copy the Updated HTML Code**
 
 -   In Jotform Builder, locate the updated form.
 
 -   Copy the generated HTML code for the form.
 
-3.  **Embed HTML in Webflow**
+#### 3. **Embed HTML in Webflow**
 
 -   Go to your Webflow project.
 
@@ -49,19 +50,21 @@ When updating an existing form, follow these steps:
 
 -   Locate the Embed element and paste the copied HTML code.
 
-4.  **Update JavaScript (If Applicable)**
+#### 4. **Update JavaScript (If Applicable)**
 
--   If there are changes to the JavaScript associated with the form:
+-   If there are changes to the JavaScript associated with the form, copy the updated JavaScript code.
 
--   Copy the updated JavaScript code.
-
-5.  **Deploy JavaScript to GitHub**
+#### 5. **Deploy JavaScript to GitHub**
 
 -   Clone the repository if you haven't already:
 
 ```bash
 
-git clone https://github.com/amplydevelopment/montenido.git
+
+
+git  clone  https://github.com/amplydevelopment/montenido.git
+
+
 
 ```
 
@@ -69,7 +72,11 @@ git clone https://github.com/amplydevelopment/montenido.git
 
 ```bash
 
-cd montenido
+
+
+cd  montenido
+
+
 
 ```
 
@@ -79,23 +86,35 @@ cd montenido
 
 ```bash
 
-git add .
 
-git commit -m "Update JavaScript for [form-name]"
 
-git push origin main
+git  add  .
+
+
+
+git  commit  -m  "Update JavaScript for [form-name]"
+
+
+
+git  push  origin  main
+
+
 
 ```
 
-6.  **Update Script Source to CDN**
+#### 6. **Update Script Source to CDN**
 
 -   After pushing the JavaScript changes, obtain the `commitId` and the filename.
 
 -   In your Webflow Embed element, update the `<script src>` tag to point to the CDN with the specific commit ID and
-    filename:
+
+filename:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
+<script
+	defer
+	src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"
+></script>
 ```
 
 -   Replace `{insert-commit-id}` with the actual commit ID and `{insert-file-name}` with the JavaScript file name.
@@ -104,23 +123,27 @@ git push origin main
 
 When creating a new form, follow the same steps as making changes to existing forms with some additional steps:
 
-1.  **Access the Jotform Builder**
+#### 1. **Access the Jotform Builder**
 
 -   Navigate to the Jotform Builder URL:
 
 ```
 
+
+
 https://webflow-test-env.webflow.io/jotform-builder
+
+
 
 ```
 
-2.  **Create and Copy the HTML Code**
+#### 2. **Create and Copy the HTML Code**
 
 -   Create the new form in Jotform.
 
--   Copy the generated code in Jotform for the new form.
+-   Copy the generated code in Jotform for the new form. Edit ---> Publish ---> Embed (Source Code)
 
-3.  **Embed HTML in Webflow**
+#### 3. **Embed HTML in Webflow**
 
 -   Go to your Webflow project.
 
@@ -128,7 +151,7 @@ https://webflow-test-env.webflow.io/jotform-builder
 
 -   Add an Embed element and paste the copied HTML code.
 
-4.  **Deploy JavaScript**
+#### 4. **Deploy JavaScript**
 
 -   **Add a New JavaScript File to the Repository**:
 
@@ -138,11 +161,17 @@ https://webflow-test-env.webflow.io/jotform-builder
 
 ```bash
 
-touch {filename}.js
+
+
+touch  {filename}.js
+
+
 
 ```
 
 -   Paste the copied JavaScript code into this new file and save it.
+
+> **If adding GTM Data Layer Push, perform [step 5](#add-gtm-datalayer-push) before commiting!!**
 
 -   **Commit and Push the New File to GitHub**:
 
@@ -150,11 +179,19 @@ touch {filename}.js
 
 ```bash
 
-git add {filename}.js
 
-git commit -m "Add JavaScript for new form [form-name]"
 
-git push origin main
+git  add  {filename}.js
+
+
+
+git  commit  -m  "Add JavaScript for new form [form-name]"
+
+
+
+git  push  origin  main
+
+
 
 ```
 
@@ -163,47 +200,55 @@ git push origin main
 -   After pushing the new JavaScript file, obtain the `commitId` and the filename.
 
 -   In your Webflow Embed element, update the `<script src>` tag to point to the CDN with the specific commit ID and
-    filename:
+
+filename:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
+<script
+	defer
+	src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"
+></script>
 ```
 
 -   Replace `{insert-commit-id}` with the actual commit ID and `{insert-file-name}` with the JavaScript file name.
 
-5.  **Add GTM dataLayer Push**
+#### 5. **Add GTM dataLayer Push**
 
 -   Integrate Google Tag Manager (GTM) by adding a `dataLayer` push.
 
 ```javascript
 /* GTM dataLayer Push. */
+
 const form = document.getElementById('241830427246050');
 
 form.addEventListener('submit', function (event) {
 	// Capture form data
+
 	const firstName = document.getElementById('input_3').value;
+
 	const lastName = document.getElementById('input_4').value;
+
 	const email = document.getElementById('input_5').value;
-	const ManualSource = document.getElementById('input_12').value;
 
 	// Push data to the GTM data layer
+
 	dataLayer.push({
 		event: 'form_submit_lead',
+
 		first_name: firstName,
+
 		last_name: lastName,
+
 		email: email,
-		ManualSource: ManualSource,
 	});
 });
 ```
-
-6.  **Check Fields and IDs**
 
 -   Ensure all form fields have unique and correct IDs.
 
 -   Verify that the IDs match those referenced in your JavaScript and CSS.
 
-7.  **Add `handleFormSubmit` to Form Attribute**
+#### 7. **Add `handleFormSubmit` to Form Attribute**
 
 -   Modify the form's `onsubmit` attribute to include the `handleFormSubmit` function.
 
@@ -216,6 +261,7 @@ form.addEventListener('submit', function (event) {
 ## Repository
 
 All JavaScript changes are managed in the [MONTENIDO GitHub repository](https://github.com/amplydevelopment/montenido).
+
 Ensure you follow the repository's contribution guidelines when making changes.
 
 ---
