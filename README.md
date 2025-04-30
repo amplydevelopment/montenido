@@ -59,25 +59,13 @@ When updating an existing form, follow these steps:
 -   Clone the repository if you haven't already:
 
 ```bash
-
-
-
 git  clone  https://github.com/amplydevelopment/montenido.git
-
-
-
 ```
 
 -   Navigate to the project directory:
 
 ```bash
-
-
-
 cd  montenido
-
-
-
 ```
 
 -   Add or update the JavaScript files with the new code.
@@ -85,21 +73,9 @@ cd  montenido
 -   Commit and push the changes:
 
 ```bash
-
-
-
 git  add  .
-
-
-
 git  commit  -m  "Update JavaScript for [form-name]"
-
-
-
 git  push  origin  main
-
-
-
 ```
 
 #### 6. **Update Script Source to CDN**
@@ -125,17 +101,7 @@ When creating a new form, follow the same steps as making changes to existing fo
 
 #### 1. **Access the Jotform Builder**
 
--   Navigate to the Jotform Builder URL:
-
-```
-
-
-
-https://webflow-test-env.webflow.io/jotform-builder
-
-
-
-```
+-   Navigate to the [Jotform Builder URL](https://webflow-test-env.webflow.io/jotform-builder)
 
 #### 2. **Create and Copy the HTML Code**
 
@@ -160,13 +126,7 @@ https://webflow-test-env.webflow.io/jotform-builder
 -   In your local clone of the repository, create a new JavaScript file for the form.
 
 ```bash
-
-
-
 touch  {filename}.js
-
-
-
 ```
 
 -   Paste the copied JavaScript code into this new file and save it.
@@ -178,21 +138,9 @@ touch  {filename}.js
 -   Add the new file to the repository, commit your changes, and push them to GitHub:
 
 ```bash
-
-
-
 git  add  {filename}.js
-
-
-
 git  commit  -m  "Add JavaScript for new form [form-name]"
-
-
-
 git  push  origin  main
-
-
-
 ```
 
 -   **Update Script Source to CDN**
@@ -220,25 +168,18 @@ filename:
 /* GTM dataLayer Push. */
 
 const form = document.getElementById('241830427246050');
-
 form.addEventListener('submit', function (event) {
 	// Capture form data
-
 	const firstName = document.getElementById('input_3').value;
-
 	const lastName = document.getElementById('input_4').value;
-
 	const email = document.getElementById('input_5').value;
 
 	// Push data to the GTM data layer
 
 	dataLayer.push({
 		event: 'form_submit_lead',
-
 		first_name: firstName,
-
 		last_name: lastName,
-
 		email: email,
 	});
 });
