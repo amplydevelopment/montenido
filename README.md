@@ -166,7 +166,7 @@ git push origin main
     filename:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
+<script defer src="https://cdn.jsdelivr.net/gh/amplydevelopment/montenido@{insert-commit-id}/{insert-file-name}"></script>
 ```
 
 -   Replace `{insert-commit-id}` with the actual commit ID and `{insert-file-name}` with the JavaScript file name.
