@@ -588,9 +588,9 @@ for (var i = 0; i < all_spc.length; i++) {
 }
 
 /* GTM dataLayer Push. */
-const form = document.getElementById('251184756422155');
+const form1 = document.getElementById('251184756422155');
 
-form.addEventListener('submit', function (event) {
+form1.addEventListener('submit', function (event) {
 	// Capture form data
 	const firstName = document.getElementById('first_3').value;
 	const lastName = document.getElementById('last_3').value;
