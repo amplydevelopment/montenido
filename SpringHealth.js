@@ -1,4 +1,4 @@
-window.enableEventObserver = true;
+//window.enableEventObserver = true;
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
