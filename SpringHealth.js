@@ -621,5 +621,5 @@ window.addEventListener('DOMContentLoaded', event => {
 	}
 
 	// Set the value of the input field to the truncated URL
-	document.getElementsByName('input_32').value = currentUrl;
+	document.getElementById('input_32').value = currentUrl;
 });
