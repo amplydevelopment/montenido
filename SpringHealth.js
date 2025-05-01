@@ -588,22 +588,38 @@ for (var i = 0; i < all_spc.length; i++) {
 }
 
 /* GTM dataLayer Push. */
-const form1 = document.getElementById('251184756422155');
+(function () {
+	const form = document.getElementById('251184756422155');
 
-form1.addEventListener('submit', function (event) {
-	// Capture form data
-	const firstName = document.getElementById('first_3').value;
-	const lastName = document.getElementById('last_3').value;
-	const email = document.getElementById('input_6').value;
+	form.addEventListener('submit', function (event) {
+		// Capture form data
+		const firstName = document.getElementById('first_3').value;
+		const lastName = document.getElementById('last_3').value;
+		const email = document.getElementById('input_6').value;
 
-	// Push data to the GTM data layer
-	dataLayer.push({
-		event: 'form_submit_lead',
-		first_name: firstName,
-		last_name: lastName,
-		email: email,
+		// Push data to the GTM data layer
+		dataLayer.push({
+			event: 'form_submit_lead',
+			first_name: firstName,
+			last_name: lastName,
+			email: email,
+		});
 	});
-});
+})();
 
 JotForm.ownerView = true;
 JotForm.isNewSACL = true;
+
+window.addEventListener('DOMContentLoaded', event => {
+	// Get the current URL
+	var currentUrl = window.location.href;
+
+	// Check if the URL exceeds 255 characters
+	if (currentUrl.length > 255) {
+		// Truncate the URL to 255 characters
+		currentUrl = currentUrl.substring(0, 255);
+	}
+
+	// Set the value of the input field to the truncated URL
+	document.getElementsByName('website').value = currentUrl;
+});
