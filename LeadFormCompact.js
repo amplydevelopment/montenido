@@ -1,8 +1,8 @@
 window.enableEventObserver = true;
 window.enableRenameUploadFile = false;
 window.CDN = "https://montenido.jotform.com/";
-window.umdRootPath = "/s/umd/514c2c96f33/";
-window.staticRootPath = "/s/static/59995255175/";
+window.umdRootPath = "/s/umd/3f8d83b3edd/";
+window.staticRootPath = "/s/static/989291ee38e/";
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
@@ -203,9 +203,10 @@ JotForm.setConditions([
 	},
 	{
 		action: [
-			{ id: 'action_0_1771878465571', visibility: 'Hide', isError: false, field: '78' },
-			{ id: 'action_1_1771878465571', visibility: 'Hide', isError: false, field: '76' },
-			{ id: 'action_2_1771878465571', visibility: 'Hide', isError: false, field: '75' }
+			{ id: 'action_0_1772131152469', visibility: 'Hide', isError: false, field: '80' },
+			{ id: 'action_1_1772131152469', visibility: 'Hide', isError: false, field: '78' },
+			{ id: 'action_2_1772131152469', visibility: 'Hide', isError: false, field: '76' },
+			{ id: 'action_3_1772131152469', visibility: 'Hide', isError: false, field: '81' }
 		],
 		id: '1771724985152',
 		index: '1',
@@ -213,8 +214,9 @@ JotForm.setConditions([
 		link: 'Any',
 		priority: '1',
 		terms: [
-			{ id: 'term_0_1771878465571', field: '74', operator: 'isEmpty', value: '', isError: false },
-			{ id: 'term_1_1771878465571', field: '74', operator: 'equals', value: 'Yes', isError: false }
+			{ id: 'term_1772131155470', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false },
+			{ id: 'term_0_1772131152469', field: '74', operator: 'isEmpty', value: '', isError: false },
+			{ id: 'term_1_1772131152469', field: '74', operator: 'equals', value: 'Yes', isError: false }
 		],
 		type: 'field'
 	},
@@ -232,15 +234,7 @@ JotForm.setConditions([
 		index: '2',
 		link: 'Any',
 		priority: '2',
-		terms: [
-			{
-				id: 'term_1729544019891',
-				field: '11',
-				operator: 'equals',
-				value: 'I am a professional looking to refer a patient\u002Fclient',
-				isError: false,
-			},
-		],
+		terms: [{ id: 'term_1729544019891', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
 		type: 'require',
 	},
 	{
@@ -258,40 +252,22 @@ JotForm.setConditions([
 		link: 'Any',
 		priority: '3',
 		terms: [
-			{
-				id: 'term_0_1729544110289',
-				field: '11',
-				operator: 'equals',
-				value: 'I am seeking help for my family member',
-				isError: false,
-			},
-			{
-				id: 'term_1_1729544110289',
-				field: '11',
-				operator: 'equals',
-				value: 'I am seeking help for my friend',
-				isError: false,
-			},
+			{ id: 'term_0_1729544110289', field: '11', operator: 'equals', value: 'I am seeking help for my family member', isError: false },
+			{ id: 'term_1_1729544110289', field: '11', operator: 'equals', value: 'I am seeking help for my friend', isError: false }
 		],
 		type: 'require',
 	},
 	{
-		action: [
-			{ id: 'action_0_1771724182922', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '43', '44', '45', '61', '63'] }
-		],
+		action: [{ id: 'action_0_1771724182922', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '43', '44', '45', '61', '63'] }],
 		id: '1729541803646',
 		index: '4',
 		link: 'Any',
 		priority: '4',
-		terms: [
-			{ id: 'term_0_1771724182922', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }
-		],
-		type: 'field'
+		terms: [{ id: 'term_0_1771724182922', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
+		type: 'field',
 	},
 	{
-		action: [
-			{ id: 'action_0_1730148417206', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '63'] }
-		],
+		action: [{ id: 'action_0_1730148417206', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '63'] }],
 		id: '1729541627900',
 		index: '5',
 		link: 'Any',
@@ -300,7 +276,7 @@ JotForm.setConditions([
 			{ id: 'term_0_1730148417206', field: '11', operator: 'equals', value: 'I am seeking help for my family member', isError: false },
 			{ id: 'term_1_1730148417206', field: '11', operator: 'equals', value: 'I am seeking help for my friend', isError: false }
 		],
-		type: 'field'
+		type: 'field',
 	},
 	{
 		action: [{ id: 'action_1729538639117', visibility: 'Hide', isError: false, field: '36' }],
@@ -308,15 +284,7 @@ JotForm.setConditions([
 		index: '6',
 		link: 'Any',
 		priority: '6',
-		terms: [
-			{
-				id: 'term_1729538639117',
-				field: '12',
-				operator: 'notEquals',
-				value: 'Healthcare Provider',
-				isError: false,
-			},
-		],
+		terms: [{ id: 'term_1729538639117', field: '12', operator: 'notEquals', value: 'Healthcare Provider', isError: false }],
 		type: 'field',
 	},
 	{
@@ -380,92 +348,38 @@ JotForm.setConditions([
 		type: 'calculation',
 	},
 	{
-		action: [
-			{
-				id: 'action_0_1724857047375',
-				redirect: 'https:\u002F\u002Fclementineprograms.com\u002Fthank-you\u002F',
-				isError: false,
-			},
-		],
+		action: [{ id: 'action_0_1724857047375', redirect: 'https:\u002F\u002Fclementineprograms.com\u002Fthank-you\u002F', isError: false }],
 		id: '1724798151217',
 		index: '9',
 		link: 'Any',
 		priority: '9',
 		terms: [
-			{
-				id: 'term_1724857048760',
-				field: '21',
-				operator: 'contains',
-				value: 'staging-clementineprogramscom-leadgen2.kinsta.cloud',
-				isError: false,
-			},
-			{
-				id: 'term_0_1724857047375',
-				field: '21',
-				operator: 'contains',
-				value: 'clementineprograms.com',
-				isError: false,
-			},
+			{ id: 'term_1724857048760', field: '21', operator: 'contains', value: 'staging-clementineprogramscom-leadgen2.kinsta.cloud', isError: false },
+			{ id: 'term_0_1724857047375', field: '21', operator: 'contains', value: 'clementineprograms.com', isError: false }
 		],
 		type: 'url',
 	},
 	{
-		action: [
-			{
-				id: 'action_0_1724856978553',
-				redirect: 'https:\u002F\u002Fwww.waldeneatingdisorders.com\u002Fthank-you\u002F',
-				isError: false,
-			},
-		],
+		action: [{ id: 'action_0_1724856978553', redirect: 'https:\u002F\u002Fwww.waldeneatingdisorders.com\u002Fthank-you\u002F', isError: false }],
 		id: '1724798089521',
 		index: '10',
 		link: 'Any',
 		priority: '10',
 		terms: [
-			{
-				id: 'term_1724856980812',
-				field: '21',
-				operator: 'contains',
-				value: 'dev-waldeneatingdisorders.pantheonsite.io',
-				isError: false,
-			},
-			{
-				id: 'term_0_1724856978553',
-				field: '21',
-				operator: 'contains',
-				value: 'waldeneatingdisorders.com',
-				isError: false,
-			},
+			{ id: 'term_1724856980812', field: '21', operator: 'contains', value: 'dev-waldeneatingdisorders.pantheonsite.io', isError: false },
+			{ id: 'term_0_1724856978553', field: '21', operator: 'contains', value: 'waldeneatingdisorders.com', isError: false }
 		],
 		type: 'url',
 	},
 	{
-		action: [
-			{
-				id: 'action_0_1724856957212',
-				redirect: 'https:\u002F\u002Fwww.rosewoodranch.com\u002Fthankyou\u002F',
-				isError: false,
-			},
-		],
+		action: [{ id: 'action_0_1724856957212', redirect: 'https:\u002F\u002Fwww.rosewoodranch.com\u002Fthankyou\u002F', isError: false }],
 		id: '1724344122783',
 		index: '11',
 		link: 'Any',
 		priority: '11',
 		terms: [
-			{
-				id: 'term_1724856958923',
-				field: '21',
-				operator: 'contains',
-				value: 'staging-rosewoodranch-leadgen.kinsta.cloud',
-				isError: false,
-			},
-			{
-				id: 'term_0_1724856957212',
-				field: '21',
-				operator: 'contains',
-				value: 'rosewoodranch.com',
-				isError: false,
-			},
+			{ id: 'term_1724856958923', field: '21', operator: 'contains', value: 'staging-rosewoodranch-leadgen.kinsta.cloud', isError: false },
+			{ id: 'term_0_1724856957212', field: '21', operator: 'contains', value: 'rosewoodranch.com', isError: false }
 		],
 		type: 'url',
 	},
@@ -475,21 +389,11 @@ JotForm.setConditions([
 		index: '12',
 		link: 'Any',
 		priority: '12',
-		terms: [
-			{
-				id: 'term_0_1728323806777',
-				field: '5',
-				operator: 'contains',
-				value: '@mailinator.com, @jourrapide.com, @armyspy.com, @rhyta.com, @dayrep.com, @teleworm.us',
-				isError: false,
-			},
-		],
+		terms: [{ id: 'term_0_1728323806777', field: '5', operator: 'contains', value: '@mailinator.com, @jourrapide.com, @armyspy.com, @rhyta.com, @dayrep.com, @teleworm.us', isError: false }],
 		type: 'field',
 	},
 	{
-		action: [
-			{ id: 'action_0_1771725185589', visibility: 'HideMultiple', isError: false, fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57', '69'] }
-		],
+		action: [{ id: 'action_0_1771725185589', visibility: 'HideMultiple', isError: false, fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57', '69'] }],
 		id: '1719896902666',
 		index: '13',
 		link: 'Any',
@@ -498,14 +402,7 @@ JotForm.setConditions([
 		type: 'field',
 	},
 	{
-		action: [
-			{
-				id: 'action_0_1727203212516',
-				visibility: 'ShowMultiple',
-				isError: false,
-				fields: ['3', '4', '6', '5', '12', '30', '31', '32'],
-			},
-		],
+		action: [{ id: 'action_0_1727203212516', visibility: 'ShowMultiple', isError: false, fields: ['3', '4', '6', '5', '12', '30', '31', '32'] }],
 		id: '1719896877748',
 		index: '14',
 		link: 'Any',
@@ -550,7 +447,7 @@ JotForm.clearFieldOnHide = 'disable';
 JotForm.submitError = 'jumpToFirstError';
 JotForm.enterprise = 'montenido.jotform.com';
 
-// Retained from Snippet 1
+// Retained Custom Log Catch from Snippet 1
 window.addEventListener('error', function (event) {
 	var error = event.error || event;
 	var xhr = new XMLHttpRequest();
@@ -621,12 +518,13 @@ JotForm.init(function () {
 		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
 	);
 	
-	// New Fields from Snippet 2
+	// New fields incorporated
 	if (window.JotForm && JotForm.accessible) $('input_70').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
 	JotForm.description('input_74', 'I am the Policy Holder');
-	if (window.JotForm && JotForm.accessible) $('input_75').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_80').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_81').setAttribute('tabindex', 0);
 
 	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
 	JotForm.calenderViewMonths[76] = [
@@ -817,10 +715,13 @@ setTimeout(function () {
 		{ description: '', name: 'typeA72', qid: '72', subLabel: '', text: 'Group #', type: 'control_textbox' },
 		{ name: 'input73', qid: '73', text: 'I am the Policy Holder?', type: 'control_text' },
 		{ description: 'I am the Policy Holder', name: 'typeA74', qid: '74', text: 'I am the Policy Holder Value', type: 'control_radio' },
-		{ description: '', name: 'typeA75', qid: '75', subLabel: '', text: 'Subscriber Name', type: 'control_textbox' },
+		null,
 		{ description: 'Subscriber Date of Birth', name: 'date76', qid: '76', text: 'Subscriber Date of Birth', type: 'control_datetime' },
 		null,
-		{ description: 'Relationship to Policy holder', name: 'typeA78', qid: '78', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' }
+		{ description: 'Relationship to Policy holder', name: 'typeA78', qid: '78', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
+		null,
+		{ description: '', name: 'typeA80', qid: '80', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
+		{ description: '', name: 'typeA81', qid: '81', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' }
 	]);
 }, 20);
 
