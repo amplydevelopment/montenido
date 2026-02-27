@@ -1,8 +1,8 @@
 window.enableEventObserver = true;
 window.enableRenameUploadFile = false;
 window.CDN = "https://montenido.jotform.com/";
-window.umdRootPath = "/s/umd/9a1af3ffbb1/";
-window.staticRootPath = "/s/static/59995255175/";
+window.umdRootPath = "/s/umd/3f8d83b3edd/";
+window.staticRootPath = "/s/static/989291ee38e/";
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
@@ -185,24 +185,25 @@ JotForm.setCalculations([
 JotForm.setConditions([
 	{
 		action: [
-			{ id: 'action_1771723362132', visibility: 'Hide', isError: false, field: '73' },
-			{ id: 'action_1771723354358', visibility: 'Hide', isError: false, field: '74' },
-			{ id: 'action_1771723346843', visibility: 'Hide', isError: false, field: '72' },
-			{ id: 'action_1771723340622', visibility: 'Hide', isError: false, field: '71' },
-			{ id: 'action_1771723259553', visibility: 'Hide', isError: false, field: '70' }
+			{ id: 'action_0_1772130900769', visibility: 'Hide', isError: false, field: '73' },
+			{ id: 'action_1_1772130900769', visibility: 'Hide', isError: false, field: '74' },
+			{ id: 'action_2_1772130900769', visibility: 'Hide', isError: false, field: '72' },
+			{ id: 'action_3_1772130900769', visibility: 'Hide', isError: false, field: '71' },
+			{ id: 'action_4_1772130900769', visibility: 'Hide', isError: false, field: '70' }
 		],
 		id: '1771723366940',
 		index: '0',
 		link: 'Any',
 		priority: '0',
-		terms: [{ id: 'term_1771723259553', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false }],
+		terms: [{ id: 'term_0_1772130900769', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false }],
 		type: 'field'
 	},
 	{
 		action: [
-			{ id: 'action_0_1771878709455', visibility: 'Hide', isError: false, field: '83' },
-			{ id: 'action_1_1771878709455', visibility: 'Hide', isError: false, field: '76' },
-			{ id: 'action_2_1771878709455', visibility: 'Hide', isError: false, field: '75' }
+			{ id: 'action_0_1772130937345', visibility: 'Hide', isError: false, field: '85' },
+			{ id: 'action_1_1772130937345', visibility: 'Hide', isError: false, field: '83' },
+			{ id: 'action_2_1772130937345', visibility: 'Hide', isError: false, field: '76' },
+			{ id: 'action_3_1772130937345', visibility: 'Hide', isError: false, field: '84' }
 		],
 		id: '1771723139172',
 		index: '1',
@@ -210,8 +211,9 @@ JotForm.setConditions([
 		link: 'Any',
 		priority: '1',
 		terms: [
-			{ id: 'term_0_1771878709455', field: '73', operator: 'equals', value: 'Yes', isError: false },
-			{ id: 'term_1_1771878709455', field: '73', operator: 'isEmpty', value: '', isError: false }
+			{ id: 'term_1772130949133', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false },
+			{ id: 'term_0_1772130937345', field: '73', operator: 'equals', value: 'Yes', isError: false },
+			{ id: 'term_1_1772130937345', field: '73', operator: 'isEmpty', value: '', isError: false }
 		],
 		type: 'field'
 	},
@@ -518,7 +520,8 @@ JotForm.init(function () {
 	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
 	JotForm.description('input_73', 'I am the Policy Holder?');
-	if (window.JotForm && JotForm.accessible) $('input_75').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_84').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex', 0);
 
 	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
 	JotForm.calenderViewMonths[76] = [
@@ -709,10 +712,12 @@ setTimeout(function () {
 		{ description: '', name: 'typeA72', qid: '72', subLabel: '', text: 'Group #', type: 'control_textbox' },
 		{ description: 'I am the Policy Holder?', name: 'typeA73', qid: '73', text: 'I am the Policy Holder Value', type: 'control_radio' },
 		{ name: 'input74', qid: '74', text: 'I am the Policy Holder?', type: 'control_text' },
-		{ description: '', name: 'typeA75', qid: '75', subLabel: '', text: 'Subscriber Name', type: 'control_textbox' },
+		null,
 		{ description: 'Subscriber Date of Birth', name: 'date76', qid: '76', text: 'Subscriber Date of Birth', type: 'control_datetime' },
 		null, null, null, null, null, null,
-		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' }
+		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
+		{ description: '', name: 'typeA84', qid: '84', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
+		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' }
 	]);
 }, 20);
 
