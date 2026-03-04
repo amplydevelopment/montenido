@@ -1,8 +1,8 @@
 window.enableEventObserver = true;
 window.enableRenameUploadFile = false;
 window.CDN = "https://montenido.jotform.com/";
-window.umdRootPath = "/s/umd/3f8d83b3edd/";
-window.staticRootPath = "/s/static/989291ee38e/";
+window.umdRootPath = "/s/umd/2a315ae5378/";
+window.staticRootPath = "/s/static/36afb54b19c/";
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
@@ -197,7 +197,7 @@ JotForm.setConditions([
 		priority: '0',
 		terms: [
 			{ id: 'term_1771725136211', field: '69', operator: 'isEmpty', value: '', isError: false },
-			{ id: 'term_0_1771725125091', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false }
+			{ id: 'term_0_1771725125091', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false }
 		],
 		type: 'field'
 	},
@@ -214,7 +214,7 @@ JotForm.setConditions([
 		link: 'Any',
 		priority: '1',
 		terms: [
-			{ id: 'term_1772131155470', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false },
+			{ id: 'term_1772131155470', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false },
 			{ id: 'term_0_1772131152469', field: '74', operator: 'isEmpty', value: '', isError: false },
 			{ id: 'term_1_1772131152469', field: '74', operator: 'equals', value: 'Yes', isError: false }
 		],
@@ -447,7 +447,7 @@ JotForm.clearFieldOnHide = 'disable';
 JotForm.submitError = 'jumpToFirstError';
 JotForm.enterprise = 'montenido.jotform.com';
 
-// Retained Custom Log Catch from Snippet 1
+// Retained from Snippet 1
 window.addEventListener('error', function (event) {
 	var error = event.error || event;
 	var xhr = new XMLHttpRequest();
@@ -518,7 +518,6 @@ JotForm.init(function () {
 		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
 	);
 	
-	// New fields incorporated
 	if (window.JotForm && JotForm.accessible) $('input_70').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
@@ -709,7 +708,7 @@ setTimeout(function () {
 		null,
 		{ description: 'Clients DOB', name: 'date', qid: '63', text: 'Clients DOB', type: 'control_datetime' },
 		null, null, null, null, null,
-		{ description: '', name: 'typeA69', qid: '69', text: 'Get help faster by sharing additional insurance details', type: 'control_checkbox' },
+		{ description: '', name: 'typeA69', qid: '69', text: 'Have insurance? You can include those details here so we can review coverage with you.', type: 'control_checkbox' },
 		{ description: '', name: 'typeA70', qid: '70', subLabel: '', text: 'Insurance Name', type: 'control_textbox' },
 		{ description: '', name: 'typeA71', qid: '71', subLabel: '', text: 'Subscriber ID', type: 'control_textbox' },
 		{ description: '', name: 'typeA72', qid: '72', subLabel: '', text: 'Group #', type: 'control_textbox' },
