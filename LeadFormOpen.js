@@ -1,8 +1,8 @@
 window.enableEventObserver = true;
 window.enableRenameUploadFile = false;
 window.CDN = "https://montenido.jotform.com/";
-window.umdRootPath = "/s/umd/3f8d83b3edd/";
-window.staticRootPath = "/s/static/989291ee38e/";
+window.umdRootPath = "/s/umd/2a315ae5378/";
+window.staticRootPath = "/s/static/36afb54b19c/";
 JotForm.newDefaultTheme = true;
 JotForm.extendsNewTheme = false;
 JotForm.singleProduct = false;
@@ -185,17 +185,20 @@ JotForm.setCalculations([
 JotForm.setConditions([
 	{
 		action: [
-			{ id: 'action_0_1772130900769', visibility: 'Hide', isError: false, field: '73' },
-			{ id: 'action_1_1772130900769', visibility: 'Hide', isError: false, field: '74' },
-			{ id: 'action_2_1772130900769', visibility: 'Hide', isError: false, field: '72' },
-			{ id: 'action_3_1772130900769', visibility: 'Hide', isError: false, field: '71' },
-			{ id: 'action_4_1772130900769', visibility: 'Hide', isError: false, field: '70' }
+			{ id: 'action_0_1771725125091', visibility: 'Hide', isError: false, field: '73' },
+			{ id: 'action_1_1771725125091', visibility: 'Hide', isError: false, field: '74' },
+			{ id: 'action_2_1771725125091', visibility: 'Hide', isError: false, field: '72' },
+			{ id: 'action_3_1771725125091', visibility: 'Hide', isError: false, field: '71' },
+			{ id: 'action_4_1771725125091', visibility: 'Hide', isError: false, field: '70' }
 		],
-		id: '1771723366940',
+		id: '1771725097638',
 		index: '0',
 		link: 'Any',
 		priority: '0',
-		terms: [{ id: 'term_0_1772130900769', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false }],
+		terms: [
+			{ id: 'term_1771725136211', field: '69', operator: 'isEmpty', value: '', isError: false },
+			{ id: 'term_0_1771725125091', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false }
+		],
 		type: 'field'
 	},
 	{
@@ -211,7 +214,7 @@ JotForm.setConditions([
 		link: 'Any',
 		priority: '1',
 		terms: [
-			{ id: 'term_1772130949133', field: '69', operator: 'notEquals', value: 'Get help faster by sharing additional insurance details', isError: false },
+			{ id: 'term_1772130949133', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false },
 			{ id: 'term_0_1772130937345', field: '73', operator: 'equals', value: 'Yes', isError: false },
 			{ id: 'term_1_1772130937345', field: '73', operator: 'isEmpty', value: '', isError: false }
 		],
@@ -255,12 +258,12 @@ JotForm.setConditions([
 		type: 'require',
 	},
 	{
-		action: [{ id: 'action_0_1771722185856', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '43', '44', '45', '61', '63'] }],
+		action: [{ id: 'action_0_1771724182922', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '43', '44', '45', '61', '63'] }],
 		id: '1729541803646',
 		index: '4',
 		link: 'Any',
 		priority: '4',
-		terms: [{ id: 'term_0_1771722185856', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
+		terms: [{ id: 'term_0_1771724182922', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
 		type: 'field',
 	},
 	{
@@ -390,12 +393,12 @@ JotForm.setConditions([
 		type: 'field',
 	},
 	{
-		action: [{ id: 'action_0_1771725258781', visibility: 'HideMultiple', isError: false, fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57', '69'] }],
+		action: [{ id: 'action_0_1771725185589', visibility: 'HideMultiple', isError: false, fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57', '69'] }],
 		id: '1719896902666',
 		index: '13',
 		link: 'Any',
 		priority: '13',
-		terms: [{ id: 'term_0_1771725258781', field: '11', operator: 'isEmpty', value: '', isError: false }],
+		terms: [{ id: 'term_0_1771725185589', field: '11', operator: 'isEmpty', value: '', isError: false }],
 		type: 'field',
 	},
 	{
@@ -435,7 +438,7 @@ JotForm.setConditions([
 		isError: '1',
 		link: 'Any',
 		priority: '15',
-		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: 'Ot', isError: false }],
+		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: '', isError: false }],
 		type: 'calculation',
 	},
 ]);
@@ -444,7 +447,7 @@ JotForm.clearFieldOnHide = 'disable';
 JotForm.submitError = 'jumpToFirstError';
 JotForm.enterprise = 'montenido.jotform.com';
 
-// Custom logic from Snippet 1 retained
+// Retained Custom Log Catch from Snippet 1
 window.addEventListener('error', function (event) {
 	var error = event.error || event;
 	var xhr = new XMLHttpRequest();
@@ -515,7 +518,6 @@ JotForm.init(function () {
 		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
 	);
 	
-	// New Fields from Snippet 2
 	if (window.JotForm && JotForm.accessible) $('input_70').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
@@ -706,16 +708,18 @@ setTimeout(function () {
 		null,
 		{ description: 'Clients DOB', name: 'date', qid: '63', text: 'Clients DOB', type: 'control_datetime' },
 		null, null, null, null, null,
-		{ description: '', name: 'typeA69', qid: '69', text: 'Get help faster by sharing additional insurance details', type: 'control_checkbox' },
+		{ description: '', name: 'typeA69', qid: '69', text: 'Have insurance? You can include those details here so we can review coverage with you.', type: 'control_checkbox' },
 		{ description: '', name: 'typeA70', qid: '70', subLabel: '', text: 'Insurance Name', type: 'control_textbox' },
 		{ description: '', name: 'typeA71', qid: '71', subLabel: '', text: 'Subscriber ID', type: 'control_textbox' },
 		{ description: '', name: 'typeA72', qid: '72', subLabel: '', text: 'Group #', type: 'control_textbox' },
-		{ description: 'I am the Policy Holder?', name: 'typeA73', qid: '73', text: 'I am the Policy Holder Value', type: 'control_radio' },
-		{ name: 'input74', qid: '74', text: 'I am the Policy Holder?', type: 'control_text' },
+		{ name: 'input73', qid: '73', text: 'I am the Policy Holder?', type: 'control_text' },
+		{ description: 'I am the Policy Holder', name: 'typeA74', qid: '74', text: 'I am the Policy Holder Value', type: 'control_radio' },
 		null,
 		{ description: 'Subscriber Date of Birth', name: 'date76', qid: '76', text: 'Subscriber Date of Birth', type: 'control_datetime' },
-		null, null, null, null, null, null,
-		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
+		null,
+		{ description: 'Relationship to Policy holder', name: 'typeA78', qid: '78', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
+		null,
+		{ description: '', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
 		{ description: '', name: 'typeA84', qid: '84', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
 		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' }
 	]);
@@ -730,7 +734,7 @@ for (var i = 0; i < all_spc.length; i++) {
 	all_spc[i].value = '243175314677158-243175314677158';
 }
 
-// Custom logic from Snippet 1 retained
+// Retained from Snippet 1
 /* GTM dataLayer Push */
 var form = document.getElementById('243175314677158');
 form.addEventListener('submit', function (event) {
@@ -757,7 +761,7 @@ form.addEventListener('submit', function (event) {
 JotForm.ownerView = true;
 JotForm.isNewSACL = true;
 
-// Custom logic from Snippet 1 retained
+// Retained from Snippet 1
 window.addEventListener('DOMContentLoaded', event => {
 	// Get the current URL
 	var currentUrl = window.location.href;
