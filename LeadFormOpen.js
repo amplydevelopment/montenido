@@ -469,6 +469,25 @@ JotForm.setConditions([
 JotForm.clearFieldOnHide = 'disable';
 JotForm.submitError = 'jumpToFirstError';
 JotForm.enterprise = 'montenido.jotform.com';
+
+// Retained Custom Log Catch from Snippet 1
+window.addEventListener('error', function (event) {
+	var error = event.error || event;
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175314677158', true);
+	xhr.setRequestHeader('Content-type', 'application/json');
+	xhr.send(
+		JSON.stringify({
+			data: {
+				stack: error.stack || error.message,
+				agent: navigator && navigator.userAgent,
+				referrer: location && location.href,
+			},
+			title: 'FORM_EXCEPTION',
+		})
+	);
+});
+
 JotForm.isFullSource = true;
 
 JotForm.init(function () {
@@ -527,15 +546,15 @@ JotForm.init(function () {
 	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
 
 	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
-	JotForm.calenderViewMonths[86] = [
+	JotForm.calenderViewMonths[82] = [
 		'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
 	];
 	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};
-	JotForm.calenderViewDays[86] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+	JotForm.calenderViewDays[82] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 	for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
 		languageOptions[langIndex].on('click', function (e) {
 			setTimeout(function () {
-				JotForm.setCalendar('86', false, {
+				JotForm.setCalendar('82', false, {
 					days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
 					future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
 				});
@@ -543,16 +562,16 @@ JotForm.init(function () {
 		});
 	}
 	JotForm.onTranslationsFetch(function () {
-		JotForm.setCalendar('86', false, {
+		JotForm.setCalendar('82', false, {
 			days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
 			future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
 		});
 	});
-	JotForm.description('input_86', 'Subscriber Date of Birth');
-	JotForm.description('input_73', 'I am the Policy Holder?');
+	JotForm.description('input_82', 'Subscriber Date of Birth');
+	JotForm.description('input_74', 'I am the Policy Holder');
 	
-	if (window.JotForm && JotForm.accessible) $('input_84').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_80').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_81').setAttribute('tabindex', 0);
 
 	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
 	JotForm.calenderViewMonths[76] = [
@@ -578,7 +597,7 @@ JotForm.init(function () {
 		});
 	});
 	JotForm.description('input_76', 'Subscriber Date of Birth');
-	JotForm.description('input_83', 'Relationship to Policy holder');
+	JotForm.description('input_78', 'Relationship to Policy holder');
 
 	if (window.JotForm && JotForm.accessible) $('input_26').setAttribute('tabindex', 0);
 	if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex', 0);
@@ -750,11 +769,10 @@ setTimeout(function () {
 		null,
 		{ description: '', name: 'typeA80', qid: '80', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
 		{ description: '', name: 'typeA81', qid: '81', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' },
-		null,
+		{ description: 'Subscriber Date of Birth', name: 'date82', qid: '82', text: 'Insured Date of Birth', type: 'control_datetime' },
 		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
 		{ description: '', name: 'typeA84', qid: '84', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
-		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' },
-		{ description: 'Subscriber Date of Birth', name: 'date86', qid: '86', text: 'Insured Date of Birth', type: 'control_datetime' }
+		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' }
 	]);
 }, 20);
 
@@ -766,6 +784,24 @@ var all_spc = document.querySelectorAll("form[id='243175314677158'] .si" + 'mple
 for (var i = 0; i < all_spc.length; i++) {
 	all_spc[i].value = '243175314677158-243175314677158';
 }
+
+// Retained Custom Log Catch from Snippet 1
+window.addEventListener('error', function (event) {
+	var error = event.error || event;
+	var xhr = new XMLHttpRequest();
+	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175314677158', true);
+	xhr.setRequestHeader('Content-type', 'application/json');
+	xhr.send(
+		JSON.stringify({
+			data: {
+				stack: error.stack || error.message,
+				agent: navigator && navigator.userAgent,
+				referrer: location && location.href,
+			},
+			title: 'FORM_EXCEPTION',
+		})
+	);
+});
 
 // Retained from Snippet 1
 /* GTM dataLayer Push */
