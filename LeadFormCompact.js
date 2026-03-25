@@ -110,12 +110,12 @@ JotForm.texts = {
 	seeAllText: 'See All',
 	progressMiddleText: 'of',
 	fieldError: 'field has an error.',
-	error: 'Error',
+	error: 'Error'
 };
 
 JotForm.newPaymentUI = true;
 JotForm.hipaa = true;
-JotForm.originalLanguage = 'en';
+JotForm.originalLanguage = "en";
 JotForm.isFormViewTrackingAllowed = true;
 JotForm.replaceTagTest = true;
 JotForm.activeRedirect = "thankurl";
@@ -123,357 +123,274 @@ JotForm.uploadServerURL = "https://montenido.jotform.com/upload";
 
 JotForm.setCalculations([
 	{
-		replaceText: '',
+		replaceText: "",
 		readOnly: false,
 		newCalculationType: true,
 		allowZeroCopy: true,
 		useCommasForDecimals: false,
-		operands: '',
-		equation: 'True',
+		operands: "",
+		equation: "True",
 		showBeforeInput: false,
 		showEmptyDecimals: false,
 		ignoreHiddenFields: false,
 		insertAsText: false,
-		id: 'action_1727202719426',
-		resultField: '33',
-		decimalPlaces: '2',
+		id: "action_1727202719426",
+		resultField: "33",
+		decimalPlaces: "2",
 		isError: false,
-		conditionId: '1727202735439',
+		conditionId: "1727202735439",
 		conditionTrue: false,
-		baseField: '31',
+		baseField: "31"
 	},
 	{
-		replaceText: '',
+		replaceText: "",
 		readOnly: false,
 		newCalculationType: true,
 		allowZeroCopy: true,
 		useCommasForDecimals: false,
-		operands: '',
-		equation: 'False',
+		operands: "",
+		equation: "False",
 		showBeforeInput: false,
 		showEmptyDecimals: false,
 		ignoreHiddenFields: false,
 		insertAsText: false,
-		id: 'action_1727202696142',
-		resultField: '33',
-		decimalPlaces: '2',
+		id: "action_1727202696142",
+		resultField: "33",
+		decimalPlaces: "2",
 		isError: false,
-		conditionId: '1727202714254',
+		conditionId: "1727202714254",
 		conditionTrue: false,
-		baseField: '31',
+		baseField: "31"
 	},
 	{
-		replaceText: '',
+		replaceText: "",
 		readOnly: false,
 		newCalculationType: true,
 		allowZeroCopy: true,
 		useCommasForDecimals: false,
-		operands: '12',
-		equation: '{12}',
+		operands: "12",
+		equation: "{12}",
 		showBeforeInput: false,
 		showEmptyDecimals: false,
 		ignoreHiddenFields: false,
 		insertAsText: false,
-		id: 'action_0_1724691605812',
-		resultField: '26',
-		decimalPlaces: '2',
+		id: "action_0_1724691605812",
+		resultField: "26",
+		decimalPlaces: "2",
 		isError: false,
-		conditionId: '1720040286767',
+		conditionId: "1720040286767",
 		conditionTrue: false,
-		baseField: '12',
-	},
+		baseField: "12"
+	}
 ]);
 
 JotForm.setConditions([
 	{
-		action: [
-			{ id: 'action_1773082839584', visibility: 'RequireMultiple', fields: ['84', '85', '76', '83'], additionalRequireTypes: [], isError: false }
-		],
-		id: '1773082879484',
-		index: '0',
-		link: 'Any',
-		priority: '0',
-		terms: [{ id: 'term_1773082839584', field: '74', operator: 'equals', value: 'No', isError: false }],
-		type: 'require'
+		action: [{ id: "action_1773082839584", visibility: "RequireMultiple", fields: ["84", "85", "76", "83"], additionalRequireTypes: [], isError: false }],
+		id: "1773082879484",
+		index: "0",
+		link: "Any",
+		priority: "0",
+		terms: [{ id: "term_1773082839584", field: "73", operator: "equals", value: "No", isError: false }],
+		type: "require"
+	},
+	{
+		action: [{ id: "action_1773082662292", visibility: "RequireMultiple", fields: ["70", "86", "72", "71"], additionalRequireTypes: [], isError: false }],
+		id: "1773082770958",
+		index: "1",
+		link: "Any",
+		priority: "1",
+		terms: [{ id: "term_1773082662292", field: "69", operator: "equals", value: "Have insurance? You can include those details here so we can review coverage with you.", isError: false }],
+		type: "require"
 	},
 	{
 		action: [
-			{ id: 'action_1773082662292', visibility: 'RequireMultiple', fields: ['70', '86', '72', '71'], additionalRequireTypes: [], isError: false }
+			{ id: "action_1_1773948839563", visibility: "Hide", isError: false, field: "86" },
+			{ id: "action_2_1773948839563", visibility: "Hide", isError: false, field: "73" },
+			{ id: "action_3_1773948839563", visibility: "Hide", isError: false, field: "74" },
+			{ id: "action_4_1773948839563", visibility: "Hide", isError: false, field: "72" },
+			{ id: "action_5_1773948839563", visibility: "Hide", isError: false, field: "71" },
+			{ id: "action_6_1773948839563", visibility: "Hide", isError: false, field: "70" }
 		],
-		id: '1773082770958',
-		index: '1',
-		link: 'Any',
-		priority: '1',
-		terms: [{ id: 'term_1773082662292', field: '69', operator: 'equals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false }],
-		type: 'require'
+		id: "1771723366940",
+		index: "2",
+		isError: "1",
+		link: "Any",
+		priority: "2",
+		terms: [{ id: "term_0_1773948839563", field: "69", operator: "notEquals", value: "Have insurance? You can include those details here so we can review coverage with you.", isError: false }],
+		type: "field"
 	},
 	{
 		action: [
-			{ id: 'action_1_1773948839563', visibility: 'Hide', isError: false, field: '86' },
-			{ id: 'action_2_1773948839563', visibility: 'Hide', isError: false, field: '73' },
-			{ id: 'action_3_1773948839563', visibility: 'Hide', isError: false, field: '74' },
-			{ id: 'action_4_1773948839563', visibility: 'Hide', isError: false, field: '72' },
-			{ id: 'action_5_1773948839563', visibility: 'Hide', isError: false, field: '71' },
-			{ id: 'action_6_1773948839563', visibility: 'Hide', isError: false, field: '70' }
+			{ id: "action_0_1772130937345", visibility: "Hide", isError: false, field: "85" },
+			{ id: "action_1_1772130937345", visibility: "Hide", isError: false, field: "83" },
+			{ id: "action_2_1772130937345", visibility: "Hide", isError: false, field: "76" },
+			{ id: "action_3_1772130937345", visibility: 'Hide', isError: false, field: "84" }
 		],
-		id: '1771723366940',
-		index: '2',
-		isError: '1',
-		link: 'Any',
-		priority: '2',
-		terms: [{ id: 'term_0_1773948839563', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false }],
-		type: 'field'
-	},
-	{
-		action: [
-			{ id: 'action_0_1772130937345', visibility: 'Hide', isError: false, field: '85' },
-			{ id: 'action_1_1772130937345', visibility: 'Hide', isError: false, field: '83' },
-			{ id: 'action_2_1772130937345', visibility: 'Hide', isError: false, field: '76' },
-			{ id: 'action_3_1772130937345', visibility: 'Hide', isError: false, field: '84' }
-		],
-		id: '1771723139172',
-		index: '3',
-		isError: '1',
-		link: 'Any',
-		priority: '3',
+		id: "1771723139172",
+		index: "3",
+		isError: "1",
+		link: "Any",
+		priority: "3",
 		terms: [
-			{ id: 'term_1772130949133', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false },
-			{ id: 'term_0_1772130937345', field: '74', operator: 'equals', value: 'Yes', isError: false },
-			{ id: 'term_1_1772130937345', field: '74', operator: 'isEmpty', value: '', isError: false }
+			{ id: "term_1772130949133", field: "69", operator: "notEquals", value: "Have insurance? You can include those details here so we can review coverage with you.", isError: false },
+			{ id: "term_0_1772130937345", field: "73", operator: "equals", value: "Yes", isError: false },
+			{ id: "term_1_1772130937345", field: "73", operator: "isEmpty", value: "", isError: false }
 		],
-		type: 'field'
+		type: "field"
 	},
 	{
-		action: [
-			{
-				id: 'action_1729544070423',
-				visibility: 'RequireMultiple',
-				fields: ['37', '38', '43', '44'],
-				additionalRequireTypes: [],
-				isError: false,
-			},
-		],
-		id: '1729544105695',
-		index: '4',
-		link: 'Any',
-		priority: '4',
-		terms: [{ id: 'term_1729544019891', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
-		type: 'require',
+		action: [{ id: "action_1729544070423", visibility: "RequireMultiple", fields: ["37", "38", "43", "44"], additionalRequireTypes: [], isError: false }],
+		id: "1729544105695",
+		index: "4",
+		link: "Any",
+		priority: "4",
+		terms: [{ id: "term_1729544019891", field: "11", operator: "equals", value: "I am a professional looking to refer a patient\u002Fclient", isError: false }],
+		type: "require"
 	},
 	{
-		action: [
-			{
-				id: 'action_0_1729544110289',
-				visibility: 'RequireMultiple',
-				isError: false,
-				fields: ['37', '38'],
-				additionalRequireTypes: [],
-			},
-		],
-		id: '1729543986998',
-		index: '5',
-		link: 'Any',
-		priority: '5',
+		action: [{ id: "action_0_1729544110289", visibility: "RequireMultiple", isError: false, fields: ["37", "38"], additionalRequireTypes: [] }],
+		id: "1729543986998",
+		index: "5",
+		link: "Any",
+		priority: "5",
 		terms: [
-			{ id: 'term_0_1729544110289', field: '11', operator: 'equals', value: 'I am seeking help for my family member', isError: false },
-			{ id: 'term_1_1729544110289', field: '11', operator: 'equals', value: 'I am seeking help for my friend', isError: false }
+			{ id: "term_0_1729544110289", field: "11", operator: "equals", value: "I am seeking help for my family member", isError: false },
+			{ id: "term_1_1729544110289", field: "11", operator: "equals", value: "I am seeking help for my friend", isError: false }
 		],
-		type: 'require',
+		type: "require"
 	},
 	{
-		action: [{ id: 'action_0_1771724182922', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '43', '44', '45', '61', '63'] }],
-		id: '1729541803646',
-		index: '6',
-		link: 'Any',
-		priority: '6',
-		terms: [{ id: 'term_0_1771724182922', field: '11', operator: 'equals', value: 'I am a professional looking to refer a patient\u002Fclient', isError: false }],
-		type: 'field',
+		action: [{ id: "action_0_1771724182922", visibility: "ShowMultiple", isError: false, fields: ["37", "38", "43", "44", "45", "61", "63"] }],
+		id: "1729541803646",
+		index: "6",
+		link: "Any",
+		priority: "6",
+		terms: [{ id: "term_0_1771724182922", field: "11", operator: "equals", value: "I am a professional looking to refer a patient\u002Fclient", isError: false }],
+		type: "field"
 	},
 	{
-		action: [{ id: 'action_0_1730148417206', visibility: 'ShowMultiple', isError: false, fields: ['37', '38', '63'] }],
-		id: '1729541627900',
-		index: '7',
-		link: 'Any',
-		priority: '7',
+		action: [{ id: "action_0_1730148417206", visibility: "ShowMultiple", isError: false, fields: ["37", "38", "63"] }],
+		id: "1729541627900",
+		index: "7",
+		link: "Any",
+		priority: "7",
 		terms: [
-			{ id: 'term_0_1730148417206', field: '11', operator: 'equals', value: 'I am seeking help for my family member', isError: false },
-			{ id: 'term_1_1730148417206', field: '11', operator: 'equals', value: 'I am seeking help for my friend', isError: false }
+			{ id: "term_0_1730148417206", field: "11", operator: "equals", value: "I am seeking help for my family member", isError: false },
+			{ id: "term_1_1730148417206", field: "11", operator: "equals", value: "I am seeking help for my friend", isError: false }
 		],
-		type: 'field',
+		type: "field"
 	},
 	{
-		action: [{ id: 'action_1729538639117', visibility: 'Hide', isError: false, field: '36' }],
-		id: '1729538655002',
-		index: '8',
-		link: 'Any',
-		priority: '8',
-		terms: [{ id: 'term_1729538639117', field: '12', operator: 'notEquals', value: 'Healthcare Provider', isError: false }],
-		type: 'field',
+		action: [{ id: "action_1729538639117", visibility: "Hide", isError: false, field: "36" }],
+		id: "1729538655002",
+		index: "8",
+		link: "Any",
+		priority: "8",
+		terms: [{ id: "term_1729538639117", field: "12", operator: "notEquals", value: "Healthcare Provider", isError: false }],
+		type: "field"
 	},
 	{
-		action: [
-			{
-				replaceText: '',
-				readOnly: false,
-				newCalculationType: true,
-				allowZeroCopy: true,
-				useCommasForDecimals: false,
-				operands: '',
-				equation: 'True',
-				showBeforeInput: false,
-				showEmptyDecimals: false,
-				ignoreHiddenFields: false,
-				insertAsText: false,
-				id: 'action_1727202719426',
-				resultField: '33',
-				decimalPlaces: '2',
-				isError: false,
-				conditionId: '1727202735439',
-				conditionTrue: false,
-				baseField: '31',
-			},
-		],
-		id: '1727202735439',
-		index: '9',
-		link: 'Any',
-		priority: '9',
-		terms: [{ id: 'term_1727202719426', field: '31', operator: 'isFilled', value: '', isError: false }],
-		type: 'calculation',
+		action: [{ replaceText: "", readOnly: false, newCalculationType: true, allowZeroCopy: true, useCommasForDecimals: false, operands: "", equation: "True", showBeforeInput: false, showEmptyDecimals: false, ignoreHiddenFields: false, insertAsText: false, id: "action_1727202719426", resultField: "33", decimalPlaces: "2", isError: false, conditionId: "1727202735439", conditionTrue: false, baseField: "31" }],
+		id: "1727202735439",
+		index: "9",
+		link: "Any",
+		priority: "9",
+		terms: [{ id: "term_1727202719426", field: "31", operator: "isFilled", value: "", isError: false }],
+		type: "calculation"
 	},
 	{
-		action: [
-			{
-				replaceText: '',
-				readOnly: false,
-				newCalculationType: true,
-				allowZeroCopy: true,
-				useCommasForDecimals: false,
-				operands: '',
-				equation: 'False',
-				showBeforeInput: false,
-				showEmptyDecimals: false,
-				ignoreHiddenFields: false,
-				insertAsText: false,
-				id: 'action_1727202696142',
-				resultField: '33',
-				decimalPlaces: '2',
-				isError: false,
-				conditionId: '1727202714254',
-				conditionTrue: false,
-				baseField: '31',
-			},
-		],
-		id: '1727202714254',
-		index: '10',
-		link: 'Any',
-		priority: '10',
-		terms: [{ id: 'term_1727202696142', field: '31', operator: 'isEmpty', value: '', isError: false }],
-		type: 'calculation',
+		action: [{ replaceText: "", readOnly: false, newCalculationType: true, allowZeroCopy: true, useCommasForDecimals: false, operands: "", equation: "False", showBeforeInput: false, showEmptyDecimals: false, ignoreHiddenFields: false, insertAsText: false, id: "action_1727202696142", resultField: "33", decimalPlaces: "2", isError: false, conditionId: "1727202714254", conditionTrue: false, baseField: "31" }],
+		id: "1727202714254",
+		index: "10",
+		link: "Any",
+		priority: "10",
+		terms: [{ id: "term_1727202696142", field: "31", operator: "isEmpty", value: "", isError: false }],
+		type: "calculation"
 	},
 	{
-		action: [{ id: 'action_0_1724857047375', redirect: 'https:\u002F\u002Fclementineprograms.com\u002Fthank-you\u002F', isError: false }],
-		id: '1724798151217',
-		index: '11',
-		link: 'Any',
-		priority: '11',
+		action: [{ id: "action_0_1724857047375", redirect: "https:\u002F\u002Fclementineprograms.com\u002Fthank-you\u002F", isError: false }],
+		id: "1724798151217",
+		index: "11",
+		link: "Any",
+		priority: "11",
 		terms: [
-			{ id: 'term_1724857048760', field: '21', operator: 'contains', value: 'staging-clementineprogramscom-leadgen2.kinsta.cloud', isError: false },
-			{ id: 'term_0_1724857047375', field: '21', operator: 'contains', value: 'clementineprograms.com', isError: false }
+			{ id: "term_1724857048760", field: "21", operator: "contains", value: "staging-clementineprogramscom-leadgen2.kinsta.cloud", isError: false },
+			{ id: "term_0_1724857047375", field: "21", operator: "contains", value: "clementineprograms.com", isError: false }
 		],
-		type: 'url',
+		type: "url"
 	},
 	{
-		action: [{ id: 'action_0_1724856978553', redirect: 'https:\u002F\u002Fwww.waldeneatingdisorders.com\u002Fthank-you\u002F', isError: false }],
-		id: '1724798089521',
-		index: '12',
-		link: 'Any',
-		priority: '12',
+		action: [{ id: "action_0_1724856978553", redirect: "https:\u002F\u002Fwww.waldeneatingdisorders.com\u002Fthank-you\u002F", isError: false }],
+		id: "1724798089521",
+		index: "12",
+		link: "Any",
+		priority: "12",
 		terms: [
-			{ id: 'term_1724856980812', field: '21', operator: 'contains', value: 'dev-waldeneatingdisorders.pantheonsite.io', isError: false },
-			{ id: 'term_0_1724856978553', field: '21', operator: 'contains', value: 'waldeneatingdisorders.com', isError: false }
+			{ id: "term_1724856980812", field: "21", operator: "contains", value: "dev-waldeneatingdisorders.pantheonsite.io", isError: false },
+			{ id: "term_0_1724856978553", field: "21", operator: "contains", value: "waldeneatingdisorders.com", isError: false }
 		],
-		type: 'url',
+		type: "url"
 	},
 	{
-		action: [{ id: 'action_0_1724856957212', redirect: 'https:\u002F\u002Fwww.rosewoodranch.com\u002Fthankyou\u002F', isError: false }],
-		id: '1724344122783',
-		index: '13',
-		link: 'Any',
-		priority: '13',
+		action: [{ id: "action_0_1724856957212", redirect: "https:\u002F\u002Fwww.rosewoodranch.com\u002Fthankyou\u002F", isError: false }],
+		id: "1724344122783",
+		index: "13",
+		link: "Any",
+		priority: "13",
 		terms: [
-			{ id: 'term_1724856958923', field: '21', operator: 'contains', value: 'staging-rosewoodranch-leadgen.kinsta.cloud', isError: false },
-			{ id: 'term_0_1724856957212', field: '21', operator: 'contains', value: 'rosewoodranch.com', isError: false }
+			{ id: "term_1724856958923", field: "21", operator: "contains", value: "staging-rosewoodranch-leadgen.kinsta.cloud", isError: false },
+			{ id: "term_0_1724856957212", field: "21", operator: "contains", value: "rosewoodranch.com", isError: false }
 		],
-		type: 'url',
+		type: "url"
 	},
 	{
-		action: [{ id: 'action_0_1728323806777', visibility: 'Hide', isError: false, field: '27' }],
-		id: '1720735330260',
-		index: '14',
-		link: 'Any',
-		priority: '14',
-		terms: [{ id: 'term_0_1728323806777', field: '5', operator: 'contains', value: '@mailinator.com, @jourrapide.com, @armyspy.com, @rhyta.com, @dayrep.com, @teleworm.us', isError: false }],
-		type: 'field',
+		action: [{ id: "action_0_1728323806777", visibility: "Hide", isError: false, field: "27" }],
+		id: "1720735330260",
+		index: "14",
+		link: "Any",
+		priority: "14",
+		terms: [{ id: "term_0_1728323806777", field: "5", operator: "contains", value: "@mailinator.com, @jourrapide.com, @armyspy.com, @rhyta.com, @dayrep.com, @teleworm.us", isError: false }],
+		type: "field"
 	},
 	{
-		action: [{ id: 'action_0_1771725185589', visibility: 'HideMultiple', isError: false, fields: ['3', '4', '5', '6', '12', '27', '30', '22', '31', '32', '36', '46', '57', '69'] }],
-		id: '1719896902666',
-		index: '15',
-		link: 'Any',
-		priority: '15',
-		terms: [{ id: 'term_0_1771725185589', field: '11', operator: 'isEmpty', value: '', isError: false }],
-		type: 'field',
+		action: [{ id: "action_0_1771725185589", visibility: "HideMultiple", isError: false, fields: ["3", "4", "5", "6", "12", "27", "30", "22", "31", "32", "36", "46", "57", "69"] }],
+		id: "1719896902666",
+		index: "15",
+		link: "Any",
+		priority: "15",
+		terms: [{ id: "term_0_1771725185589", field: "11", operator: "isEmpty", value: "", isError: false }],
+		type: "field"
 	},
 	{
-		action: [{ id: 'action_0_1727203212516', visibility: 'ShowMultiple', isError: false, fields: ['3', '4', '6', '5', '12', '30', '31', '32'] }],
-		id: '1719896877748',
-		index: '16',
-		link: 'Any',
-		priority: '16',
-		terms: [{ id: 'term_0_1727203212516', field: '11', operator: 'isFilled', value: '', isError: false }],
-		type: 'field',
+		action: [{ id: "action_0_1727203212516", visibility: "ShowMultiple", isError: false, fields: ["3", "4", "6", "5", "12", "30", "31", "32"] }],
+		id: "1719896877748",
+		index: "16",
+		link: "Any",
+		priority: "16",
+		terms: [{ id: "term_0_1727203212516", field: "11", operator: "isFilled", value: "", isError: false }],
+		type: "field"
 	},
 	{
-		action: [
-			{
-				replaceText: '',
-				readOnly: false,
-				newCalculationType: true,
-				allowZeroCopy: true,
-				useCommasForDecimals: false,
-				operands: '12',
-				equation: '{12}',
-				showBeforeInput: false,
-				showEmptyDecimals: false,
-				ignoreHiddenFields: false,
-				insertAsText: false,
-				id: 'action_0_1724691605812',
-				resultField: '26',
-				decimalPlaces: '2',
-				isError: false,
-				conditionId: '1720040286767',
-				conditionTrue: false,
-				baseField: '12',
-			},
-		],
-		id: '1720040286767',
-		index: '17',
-		isError: '1',
-		link: 'Any',
-		priority: '17',
-		terms: [{ id: 'term_0_1724691605812', field: '12', operator: 'isFilled', value: '', isError: false }],
-		type: 'calculation',
-	},
+		action: [{ replaceText: "", readOnly: false, newCalculationType: true, allowZeroCopy: true, useCommasForDecimals: false, operands: "12", equation: "{12}", showBeforeInput: false, showEmptyDecimals: false, ignoreHiddenFields: false, insertAsText: false, id: "action_0_1724691605812", resultField: "26", decimalPlaces: "2", isError: false, conditionId: "1720040286767", conditionTrue: false, baseField: "12" }],
+		id: "1720040286767",
+		index: "17",
+		isError: "1",
+		link: "Any",
+		priority: "17",
+		terms: [{ id: "term_0_1724691605812", field: "12", operator: "isFilled", value: "", isError: false }],
+		type: "calculation"
+	}
 ]);
 
-JotForm.clearFieldOnHide = 'disable';
-JotForm.submitError = 'jumpToFirstError';
-JotForm.enterprise = 'montenido.jotform.com';
+JotForm.clearFieldOnHide="disable";
+JotForm.submitError="jumpToFirstError";
+JotForm.enterprise = "montenido.jotform.com";
 
 window.addEventListener('error', function (event) {
 	var error = event.error || event;
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175314677158', true);
+	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175190287157', true);
 	xhr.setRequestHeader('Content-type', 'application/json');
 	xhr.send(
 		JSON.stringify({
@@ -489,287 +406,163 @@ window.addEventListener('error', function (event) {
 
 JotForm.isFullSource = true;
 
-JotForm.init(function () {
+JotForm.init(function(){
 	/*INIT-START*/
-	if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_30').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_3').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_4').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_30').setAttribute('tabindex',0);
 	JotForm.description('input_30', 'Pls. Enter 5 Digit Zip Code');
-	if (window.JotForm && JotForm.accessible) $('input_37').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_38').setAttribute('tabindex', 0);
-	JotForm.setPhoneMaskingValidator(
-		'input_44_full',
-		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
-	);
+	if (window.JotForm && JotForm.accessible) $('input_37').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_38').setAttribute('tabindex',0);
+	JotForm.setPhoneMaskingValidator( 'input_44_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
 
-	JotForm.calendarMonths = [
-		'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-	];
-	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
-	JotForm.calenderViewMonths[63] = [
-		'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-	];
-	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};
-	JotForm.calenderViewDays[63] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-	JotForm.calendarDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-	JotForm.calendarOther = { today: 'Today' };
-	var languageOptions = document.querySelectorAll('#langList li');
-	for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
-		languageOptions[langIndex].on('click', function (e) {
-			setTimeout(function () {
-				JotForm.setCalendar('63', false, {
-					days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-					future: false, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-				});
-			}, 0);
-		});
-	}
-	JotForm.onTranslationsFetch(function () {
-		JotForm.setCalendar('63', false, {
-			days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-			future: false, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-		});
-	});
+	JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};  
+	JotForm.calenderViewMonths[63] = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};  
+	JotForm.calenderViewDays[63] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarOther = {"today":"Today"};
+	var languageOptions = document.querySelectorAll('#langList li'); 
+	for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+		languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("63", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":false,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+	} 
+	JotForm.onTranslationsFetch(function() { JotForm.setCalendar("63", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":false,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+	
 	JotForm.description('input_63', 'Clients DOB');
-	if (window.JotForm && JotForm.accessible) $('input_45').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_45').setAttribute('tabindex',0);
 	JotForm.description('input_45', 'Pls. Enter 5 Digit Zip Code');
 	JotForm.description('input_46', 'Level of care your client is interested in ');
-	if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex', 0);
-	JotForm.setPhoneMaskingValidator(
-		'input_6_full',
-		'\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023'
-	);
+	if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex',0);
+	JotForm.setPhoneMaskingValidator( 'input_6_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
 	
-	if (window.JotForm && JotForm.accessible) $('input_70').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_70').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_72').setAttribute('tabindex',0);
 
-	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
-	JotForm.calenderViewMonths[86] = [
-		'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-	];
-	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};
-	JotForm.calenderViewDays[86] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-	for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
-		languageOptions[langIndex].on('click', function (e) {
-			setTimeout(function () {
-				JotForm.setCalendar('86', false, {
-					days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-					future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-				});
-			}, 0);
-		});
-	}
-	JotForm.onTranslationsFetch(function () {
-		JotForm.setCalendar('86', false, {
-			days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-			future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-		});
-	});
+	JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};  
+	JotForm.calenderViewMonths[86] = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};  
+	JotForm.calenderViewDays[86] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarOther = {"today":"Today"};
+	var languageOptions = document.querySelectorAll('#langList li'); 
+	for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+		languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("86", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+	} 
+	JotForm.onTranslationsFetch(function() { JotForm.setCalendar("86", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+	
 	JotForm.description('input_86', 'Client DOB');
 	JotForm.description('input_73', 'I am the Policy Holder?');
 	
-	if (window.JotForm && JotForm.accessible) $('input_84').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex', 0);
+	if (window.JotForm && JotForm.accessible) $('input_84').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_85').setAttribute('tabindex',0);
 
-	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};
-	JotForm.calenderViewMonths[76] = [
-		'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'
-	];
-	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};
-	JotForm.calenderViewDays[76] = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
-
-	for (var langIndex = 0; langIndex < languageOptions.length; langIndex++) {
-		languageOptions[langIndex].on('click', function (e) {
-			setTimeout(function () {
-				JotForm.setCalendar('76', false, {
-					days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-					future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-				});
-			}, 0);
-		});
-	}
-	JotForm.onTranslationsFetch(function () {
-		JotForm.setCalendar('76', false, {
-			days: { monday: true, tuesday: true, wednesday: true, thursday: true, friday: true, saturday: true, sunday: true },
-			future: true, past: true, custom: false, ranges: false, start: '', end: '', countSelectedDaysOnly: false
-		});
-	});
+	JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};  
+	JotForm.calenderViewMonths[76] = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+	if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};  
+	JotForm.calenderViewDays[76] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+	JotForm.calendarOther = {"today":"Today"};
+	var languageOptions = document.querySelectorAll('#langList li'); 
+	for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+		languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("76", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+	} 
+	JotForm.onTranslationsFetch(function() { JotForm.setCalendar("76", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+	
 	JotForm.description('input_76', 'Subscriber DOB');
 	JotForm.description('input_83', 'Relationship to Policy holder');
-
-	if (window.JotForm && JotForm.accessible) $('input_26').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_19').setAttribute('tabindex', 0);
-	if (window.JotForm && JotForm.accessible) $('input_33').setAttribute('tabindex', 0);
-
-	JotForm.alterTexts({
-		ageVerificationError: 'You must be older than {minAge} years old to submit this form.',
-		alphabetic: 'This field can only contain letters',
-		alphanumeric: 'This field can only contain letters and numbers.',
-		cancelAppointment: 'Cancel Appointment',
-		cancelSelection: 'Cancel Selection',
-		ccDonationMinLimitError: 'Minimum amount is {minAmount} {currency}',
-		ccInvalidCVC: 'CVC number is invalid.',
-		ccInvalidExpireDate: 'Expire date is invalid.',
-		ccInvalidExpireMonth: 'Expiration month is invalid.',
-		ccInvalidExpireYear: 'Expiration year is invalid.',
-		ccInvalidNumber: 'Credit Card Number is invalid.',
-		ccMissingDetails: 'Please fill up the credit card details.',
-		ccMissingDonation: 'Please enter numeric values for donation amount.',
-		ccMissingProduct: 'Please select at least one product.',
-		characterLimitError: 'Too many Characters.  The limit is',
-		characterMinLimitError: 'Too few characters. The minimum is',
-		chooseAFile_infoMessage: 'Choose a file',
-		confirmClearForm: 'Are you sure you want to clear the form',
-		confirmEmail: 'E-mail does not match',
-		currency: 'This field can only contain currency values.',
-		cyrillic: 'This field can only contain cyrillic characters',
-		dateInvalid: 'This date is not valid. The date format is {format}',
-		dateInvalidSeparate: 'This date is not valid. Enter a valid {element}.',
-		dateLimited: 'This date is unavailable.',
-		disallowDecimals: 'Please enter a whole number.',
-		doneButton: 'Done',
-		doneMessage: 'Well done! All errors are fixed.',
-		dragAndDropFilesHere_infoMessage: 'Drag and drop files here',
-		email: 'Enter a valid e-mail address',
-		error: 'Error',
-		fieldError: 'field has an error.',
-		fillMask: 'Field value must fill mask.',
-		formerSelectedTime: 'Former Time',
-		freeEmailError: 'Free email accounts are not allowed',
-		generalError: 'There are errors on the form. Please fix them before continuing.',
-		generalPageError: 'There are errors on this page. Please fix them before continuing.',
-		geoNotAvailableDesc: 'Location provider not available. Please enter the address manually.',
-		geoNotAvailableTitle: 'Position Unavailable',
-		geoPermissionDesc: "Check your browser's privacy settings.",
-		geoPermissionTitle: 'Permission Denied',
-		geoTimeoutDesc: 'Please check your internet connection and try again.',
-		geoTimeoutTitle: 'Timeout',
-		gradingScoreError: 'Score total should only be less than or equal to',
-		incompleteFields: 'There are incomplete required fields. Please complete them.',
-		inputCarretErrorA: 'Input should not be less than the minimum value:',
-		inputCarretErrorB: 'Input should not be greater than the maximum value:',
-		invalidTime: 'Enter a valid time',
-		justSoldOut: 'Just Sold Out',
-		lessThan: 'Your score should be less than or equal to',
-		maxCharactersError: 'The number of characters should not be more than the maximum value:',
-		maxDigitsError: 'The maximum digits allowed is',
-		maxFileSize_infoMessage: 'Max. file size',
-		maxSelectionsError: 'The maximum number of selections allowed is ',
-		minCharactersError: 'The number of characters should not be less than the minimum value:',
-		minSelectionsError: 'The minimum required number of selections is ',
-		multipleError: 'There are {count} errors on this page. Please correct them before moving on.',
-		multipleFileUploads_emptyError: '{file} is empty, please select files again without it.',
-		multipleFileUploads_fileLimitError: 'Only {fileLimit} file uploads allowed.',
-		multipleFileUploads_minSizeError: '{file} is too small, minimum file size is {minSizeLimit}.',
-		multipleFileUploads_onLeave: 'The files are being uploaded, if you leave now the upload will be cancelled.',
-		multipleFileUploads_sizeError: '{file} is too large, maximum file size is {sizeLimit}.',
-		multipleFileUploads_typeError: '{file} has invalid extension. Only {extensions} are allowed.',
-		multipleFileUploads_uploadFailed: 'File upload failed, please remove it and upload the file again.',
-		nextButtonText: 'Next',
-		noSlotsAvailable: 'No slots available',
-		notEnoughStock: 'Not enough stock for the current selection',
-		notEnoughStock_remainedItems: 'Not enough stock for the current selection ({count} items left)',
-		noUploadExtensions: 'File has no extension file type (e.g. .txt, .png, .jpeg)',
-		numeric: 'This field can only contain numeric values',
-		oneError: 'There is {count} error on this page. Please correct it before moving on.',
-		pastDatesDisallowed: 'Date must not be in the past.',
-		pleaseWait: 'Please wait...',
-		prevButtonText: 'Previous',
-		progressMiddleText: 'of',
-		required: 'This field is required.',
-		requiredLegend: 'All fields marked with * are required and must be filled.',
-		requireEveryCell: 'Every cell is required.',
-		requireEveryRow: 'Every row is required.',
-		requireOne: 'At least one field required.',
-		restrictedDomain: 'This domain is not allowed',
-		reviewBackText: 'Back to Form',
-		reviewSubmitText: 'Review and Submit',
-		seeAllText: 'See All',
-		seeErrorsButton: 'See Errors',
-		selectedTime: 'Selected Time',
-		selectionSoldOut: 'Selection Sold Out',
-		slotUnavailable: '{time} on {date} has been selected is unavailable. Please select another slot.',
-		soldOut: 'Sold Out',
-		startButtonText: 'START',
-		submissionLimit: 'Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.',
-		submitButtonText: 'Submit',
-		subProductItemsLeft: '({count} items left)',
-		uploadExtensions: 'You can only upload following files:',
-		uploadFilesize: 'File size cannot be bigger than:',
-		uploadFilesizemin: 'File size cannot be smaller than:',
-		url: 'This field can only contain a valid URL',
-		validateEmail: 'You need to validate this e-mail',
-		wordLimitError: 'Too many words. The limit is',
-		wordMinLimitError: 'Too few words.  The minimum is'
-	});
+	
+	if (window.JotForm && JotForm.accessible) $('input_26').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_14').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_15').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_16').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_17').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_19').setAttribute('tabindex',0);
+	if (window.JotForm && JotForm.accessible) $('input_33').setAttribute('tabindex',0);
 	/*INIT-END*/
 });
 
-setTimeout(function () {
+setTimeout(function() {
 	JotForm.paymentExtrasOnTheFly([
-		null, null, null,
-		{ description: '', name: 'firstName', qid: '3', subLabel: '', text: 'First Name', type: 'control_textbox' },
-		{ description: '', name: 'lastName', qid: '4', subLabel: '', text: 'Last Name', type: 'control_textbox' },
-		{ description: '', name: 'email', qid: '5', subLabel: '', text: 'Email', type: 'control_email' },
-		{ description: '', name: 'phoneNumber', qid: '6', text: 'Phone Number', type: 'control_phone' },
-		null, null, null, null,
-		{ description: '', name: 'whoDo', qid: '11', subLabel: '', text: 'Who do you want to help?', type: 'control_dropdown' },
-		{ description: '', name: 'howDid', qid: '12', subLabel: '', text: 'How did you hear about us?', type: 'control_dropdown' },
+		null,null,null,
+		{"description":"","name":"firstName","qid":"3","subLabel":"","text":"First Name","type":"control_textbox"},
+		{"description":"","name":"lastName","qid":"4","subLabel":"","text":"Last Name","type":"control_textbox"},
+		{"description":"","name":"email","qid":"5","subLabel":"","text":"Email","type":"control_email"},
+		{"description":"","name":"phoneNumber","qid":"6","text":"Phone Number","type":"control_phone"},
+		null,null,null,null,
+		{"description":"","name":"whoDo","qid":"11","subLabel":"","text":"Who do you want to help?","type":"control_dropdown"},
+		{"description":"","name":"howDid","qid":"12","subLabel":"","text":"How did you hear about us?","type":"control_dropdown"},
 		null,
-		{ description: '', name: 'utm_campaign', qid: '14', subLabel: '', text: 'utm_campaign', type: 'control_textbox' },
-		{ description: '', name: 'utm_content', qid: '15', subLabel: '', text: 'utm_content', type: 'control_textbox' },
-		{ description: '', name: 'utm_medium', qid: '16', subLabel: '', text: 'utm_medium', type: 'control_textbox' },
-		{ description: '', name: 'utm_source', qid: '17', subLabel: '', text: 'utm_source', type: 'control_textbox' },
-		{ description: '', name: 'utm_term', qid: '18', subLabel: '', text: 'utm_term', type: 'control_textbox' },
-		{ description: '', name: 'gclid', qid: '19', subLabel: '', text: 'GCLID', type: 'control_textbox' },
+		{"description":"","name":"utm_campaign","qid":"14","subLabel":"","text":"utm_campaign","type":"control_textbox"},
+		{"description":"","name":"utm_content","qid":"15","subLabel":"","text":"utm_content","type":"control_textbox"},
+		{"description":"","name":"utm_medium","qid":"16","subLabel":"","text":"utm_medium","type":"control_textbox"},
+		{"description":"","name":"utm_source","qid":"17","subLabel":"","text":"utm_source","type":"control_textbox"},
+		{"description":"","name":"utm_term","qid":"18","subLabel":"","text":"utm_term","type":"control_textbox"},
+		{"description":"","name":"gclid","qid":"19","subLabel":"","text":"GCLID","type":"control_textbox"},
 		null,
-		{ name: 'typeA', qid: '21', text: 'Page URL', type: 'control_widget' },
-		{ name: 'typeA22', qid: '22', text: 'URL Referrer', type: 'control_widget' },
-		null, null, null,
-		{ description: '', name: 'howdidyouheader-map', qid: '26', subLabel: '', text: 'how did you header - map', type: 'control_textbox' },
-		{ name: 'submit', qid: '27', text: 'Submit', type: 'control_button' },
-		null, null,
-		{ description: 'Pls. Enter 5 Digit Zip Code', name: 'typeA30', qid: '30', subLabel: '', text: 'Zip Code', type: 'control_textbox' },
-		{ description: '', name: 'typeA31', qid: '31', text: 'Disclaimer Checkbox', type: 'control_checkbox' },
-		{ name: 'input32', qid: '32', text: "By submitting this form, I agree to Monte Nido's Privacy Policy & Terms of Use", type: 'control_text' },
-		{ description: '', name: 'typeA33', qid: '33', subLabel: '', text: 'Disclaimer Hidden Field', type: 'control_textbox' },
-		null, null,
-		{ description: '', name: 'typeA36', qid: '36', subLabel: '', text: 'Healthcare Provider Name and Practice', type: 'control_textbox' },
-		{ description: '', name: 'typeA37', qid: '37', subLabel: '', text: 'Clients First Name', type: 'control_textbox' },
-		{ description: '', name: 'typeA38', qid: '38', subLabel: '', text: 'Clients Last Name', type: 'control_textbox' },
-		null, null, null, null,
-		{ description: '', name: 'email43', qid: '43', subLabel: '', text: "Client's Email Address", type: 'control_email' },
-		{ description: '', name: 'phoneNumber44', qid: '44', text: "Client's Phone #", type: 'control_phone' },
-		{ description: 'Pls. Enter 5 Digit Zip Code', name: 'zipCode', qid: '45', subLabel: '', text: "Client's Zip Code", type: 'control_textbox' },
-		{ description: 'Level of care your client is interested in ', name: 'typeA46', qid: '46', text: 'Level of care your client is interested in ', type: 'control_checkbox' },
-		null, null, null, null, null, null, null, null, null, null,
-		{ name: 'input57', qid: '57', text: 'Level of care client is interested in', type: 'control_text' },
-		null, null, null,
-		{ description: '', name: 'typeA61', qid: '61', text: 'Yes, I give Permission to reach out directly to my client', type: 'control_checkbox' },
+		{"name":"typeA","qid":"21","text":"Page URL","type":"control_widget"},
+		{"name":"typeA22","qid":"22","text":"URL Referrer","type":"control_widget"},
+		null,null,null,
+		{"description":"","name":"howdidyouheader-map","qid":"26","subLabel":"","text":"how did you header - map","type":"control_textbox"},
+		{"name":"submit","qid":"27","text":"Submit","type":"control_button"},
+		null,null,
+		{"description":"Pls. Enter 5 Digit Zip Code","name":"typeA30","qid":"30","subLabel":"","text":"Zip Code","type":"control_textbox"},
+		{"description":"","name":"typeA31","qid":"31","text":"Disclaimer Checkbox","type":"control_checkbox"},
+		{"name":"input32","qid":"32","text":"By submitting this form, I agree to Monte Nido's Privacy Policy & Terms of Use","type":"control_text"},
+		{"description":"","name":"typeA33","qid":"33","subLabel":"","text":"Disclaimer Hidden Field","type":"control_textbox"},
+		null,null,
+		{"description":"","name":"typeA36","qid":"36","subLabel":"","text":"Healthcare Provider Name and Practice","type":"control_textbox"},
+		{"description":"","name":"typeA37","qid":"37","subLabel":"","text":"Clients First Name","type":"control_textbox"},
+		{"description":"","name":"typeA38","qid":"38","subLabel":"","text":"Clients Last Name","type":"control_textbox"},
+		null,null,null,null,
+		{"description":"","name":"email43","qid":"43","subLabel":"","text":"Client's Email Address","type":"control_email"},
+		{"description":"","name":"phoneNumber44","qid":"44","text":"Client's Phone #","type":"control_phone"},
+		{"description":"Pls. Enter 5 Digit Zip Code","name":"zipCode","qid":"45","subLabel":"","text":"Client's Zip Code","type":"control_textbox"},
+		{"description":"Level of care your client is interested in ","name":"typeA46","qid":"46","text":"Level of care your client is interested in ","type":"control_checkbox"},
+		null,null,null,null,null,null,null,null,null,null,
+		{"name":"input57","qid":"57","text":"Level of care client is interested in","type":"control_text"},
+		null,null,null,
+		{"description":"","name":"typeA61","qid":"61","text":"Yes, I give Permission to reach out directly to my client","type":"control_checkbox"},
 		null,
-		{ description: 'Clients DOB', name: 'date', qid: '63', text: 'Clients DOB', type: 'control_datetime' },
-		null, null, null, null, null,
-		{ description: '', name: 'typeA69', qid: '69', text: 'Have insurance? You can include those details here so we can review coverage with you.', type: 'control_checkbox' },
-		{ description: '', name: 'typeA70', qid: '70', subLabel: '', text: 'Insurance Name', type: 'control_textbox' },
-		{ description: '', name: 'typeA71', qid: '71', subLabel: '', text: 'Subscriber ID', type: 'control_textbox' },
-		{ description: '', name: 'typeA72', qid: '72', subLabel: '', text: 'Group #', type: 'control_textbox' },
-		{ name: 'input73', qid: '73', text: 'I am the Policy Holder?', type: 'control_text' },
-		{ description: 'I am the Policy Holder', name: 'typeA74', qid: '74', text: 'I am the Policy Holder Value', type: 'control_radio' },
+		{"description":"Clients DOB","name":"date","qid":"63","text":"Clients DOB","type":"control_datetime"},
+		null,null,null,null,null,
+		{"description":"","name":"typeA69","qid":"69","text":"Have insurance? You can include those details here so we can review coverage with you.","type":"control_checkbox"},
+		{"description":"","name":"typeA70","qid":"70","subLabel":"","text":"Insurance Name","type":"control_textbox"},
+		{"description":"","name":"typeA71","qid":"71","subLabel":"","text":"Subscriber ID","type":"control_textbox"},
+		{"description":"","name":"typeA72","qid":"72","subLabel":"","text":"Group #","type":"control_textbox"},
+		{"name":"input73","qid":"73","text":"I am the Policy Holder?","type":"control_text"},
+		{"description":"I am the Policy Holder","name":"typeA74","qid":"74","text":"I am the Policy Holder Value","type":"control_radio"},
 		null,
-		{ description: 'Subscriber DOB', name: 'date76', qid: '76', text: 'Subscriber DOB', type: 'control_datetime' },
-		null, null, null, null, null, null,
-		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
-		{ description: '', name: 'typeA84', qid: '84', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
-		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' },
-		{ description: 'Client DOB', name: 'date86', qid: '86', text: 'Client DOB', type: 'control_datetime' }
+		{"description":"Subscriber DOB","name":"date76","qid":"76","text":"Subscriber DOB","type":"control_datetime"},
+		null,
+		{"description":"Relationship to Policy holder","name":"typeA78","qid":"78","subLabel":"","text":"Relationship to Policy holder","type":"control_dropdown"},
+		null,
+		{"description":"","name":"typeA80","qid":"80","subLabel":"","text":"Subscriber First Name","type":"control_textbox"},
+		{"description":"","name":"typeA81","qid":"81","subLabel":"","text":"Subscriber Last Name","type":"control_textbox"},
+		null,
+		{"description":"Relationship to Policy holder","name":"typeA83","qid":"83","subLabel":"","text":"Relationship to Policy holder","type":"control_dropdown"},
+		{"description":"","name":"typeA84","qid":"84","subLabel":"","text":"Subscriber First Name","type":"control_textbox"},
+		{"description":"","name":"typeA85","qid":"85","subLabel":"","text":"Subscriber Last Name","type":"control_textbox"},
+		{"description":"Client DOB","name":"date86","qid":"86","text":"Client DOB","type":"control_datetime"}
 	]);
-}, 20);
+}, 20); 
+
+JotForm.showJotFormPowered = "0";
+JotForm.poweredByText = "Powered by Jotform";
+JotForm.hipaa = true;
+
+var all_spc = document.querySelectorAll("form[id='243175190287157'] .si" + "mple" + "_spc");
+for (var i = 0; i < all_spc.length; i++)
+{
+	all_spc[i].value = "243175190287157-243175190287157";
+}
+  
+JotForm.ownerView = true;
+JotForm.isNewSACL = true;
 
 /* GTM dataLayer Push & URL Truncator */
 var form = document.getElementById('243175190287157');
@@ -806,9 +599,6 @@ if (form) {
 		});
 	});
 }
-
-JotForm.ownerView = true;
-JotForm.isNewSACL = true;
 
 // URL truncation on load just in case
 window.addEventListener('DOMContentLoaded', event => {
