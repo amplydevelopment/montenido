@@ -193,7 +193,7 @@ JotForm.setConditions([
 		index: '0',
 		link: 'Any',
 		priority: '0',
-		terms: [{ id: 'term_1773082839584', field: '73', operator: 'equals', value: 'No', isError: false }],
+		terms: [{ id: 'term_1773082839584', field: '74', operator: 'equals', value: 'No', isError: false }],
 		type: 'require'
 	},
 	{
@@ -238,8 +238,8 @@ JotForm.setConditions([
 		priority: '3',
 		terms: [
 			{ id: 'term_1772130949133', field: '69', operator: 'notEquals', value: 'Have insurance? You can include those details here so we can review coverage with you.', isError: false },
-			{ id: 'term_0_1772130937345', field: '73', operator: 'equals', value: 'Yes', isError: false },
-			{ id: 'term_1_1772130937345', field: '73', operator: 'isEmpty', value: '', isError: false }
+			{ id: 'term_0_1772130937345', field: '74', operator: 'equals', value: 'Yes', isError: false },
+			{ id: 'term_1_1772130937345', field: '74', operator: 'isEmpty', value: '', isError: false }
 		],
 		type: 'field'
 	},
@@ -473,7 +473,7 @@ JotForm.enterprise = 'montenido.jotform.com';
 window.addEventListener('error', function (event) {
 	var error = event.error || event;
 	var xhr = new XMLHttpRequest();
-	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175190287157', true);
+	xhr.open('POST', 'https://montenido.jotform.com/API/formInitCatchLogger/243175314677158', true);
 	xhr.setRequestHeader('Content-type', 'application/json');
 	xhr.send(
 		JSON.stringify({
@@ -763,27 +763,13 @@ setTimeout(function () {
 		{ description: 'I am the Policy Holder', name: 'typeA74', qid: '74', text: 'I am the Policy Holder Value', type: 'control_radio' },
 		null,
 		{ description: 'Subscriber DOB', name: 'date76', qid: '76', text: 'Subscriber DOB', type: 'control_datetime' },
-		null,
-		{ description: 'Relationship to Policy holder', name: 'typeA78', qid: '78', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
-		null,
-		{ description: '', name: 'typeA80', qid: '80', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
-		{ description: '', name: 'typeA81', qid: '81', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' },
-		null,
+		null, null, null, null, null, null,
 		{ description: 'Relationship to Policy holder', name: 'typeA83', qid: '83', subLabel: '', text: 'Relationship to Policy holder', type: 'control_dropdown' },
 		{ description: '', name: 'typeA84', qid: '84', subLabel: '', text: 'Subscriber First Name', type: 'control_textbox' },
 		{ description: '', name: 'typeA85', qid: '85', subLabel: '', text: 'Subscriber Last Name', type: 'control_textbox' },
 		{ description: 'Client DOB', name: 'date86', qid: '86', text: 'Client DOB', type: 'control_datetime' }
 	]);
 }, 20);
-
-JotForm.showJotFormPowered = '0';
-JotForm.poweredByText = 'Powered by Jotform';
-JotForm.hipaa = true;
-
-var all_spc = document.querySelectorAll("form[id='243175190287157'] .si" + 'mple' + '_spc');
-for (var i = 0; i < all_spc.length; i++) {
-	all_spc[i].value = '243175190287157-243175190287157';
-}
 
 /* GTM dataLayer Push & URL Truncator */
 var form = document.getElementById('243175190287157');
@@ -823,3 +809,15 @@ if (form) {
 
 JotForm.ownerView = true;
 JotForm.isNewSACL = true;
+
+// URL truncation on load just in case
+window.addEventListener('DOMContentLoaded', event => {
+	var currentUrl = window.location.href;
+	if (currentUrl.length > 255) {
+		currentUrl = currentUrl.substring(0, 255);
+	}
+	var input21 = document.getElementById('input_21');
+	if (input21) {
+	    input21.value = currentUrl;
+	}
+});
