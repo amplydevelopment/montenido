@@ -2,8 +2,8 @@ window.enableEventObserver=true
 window.enableRenameUploadFile=false
 window.enableDateFieldSelectInputs=false
 window.CDN="https://montenido.jotform.com/"
-window.umdRootPath="/s/umd/5091944cb33/"
-window.staticRootPath="/s/static/4304d640648/"
+window.umdRootPath="/s/umd/20b7c5b99da/"
+window.staticRootPath="/s/static/5417769e9f3/"
 	JotForm.newDefaultTheme = true;
 	JotForm.extendsNewTheme = false;
 	// {GPT_APP_SCRIPT}
